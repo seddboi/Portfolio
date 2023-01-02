@@ -1,0 +1,25 @@
+.title-1{
+	position: relative;
+	overflow: hidden;
+	width: 15em;
+	border-right: .05em solid #F05454;
+	white-space: nowrap;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.type-anim {
+	animation: 
+		typing 3s steps(19) 1.5s normal both,
+		blinkingCursor .5s steps(40) infinite normal;
+}
+
+@keyframes typing {
+	from {width: 0}
+	to {width: 8.7em}
+}
+
+@keyframes blinkingCursor {
+  from { border-right-color: #F05454 }
+  to { border-right-color: transparent }
+}

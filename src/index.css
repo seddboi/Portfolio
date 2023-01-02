@@ -1,0 +1,35 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+@font-face {
+  font-family: 'Sacramento';
+  src: local('Sacramento'), 
+    url('./fonts/Sacramento-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Bitwise';
+  src: local('Bitwise'),
+    url('./fonts/Bitwise-m19x.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Modeseven';
+  src: local('Modeseven'),
+    url('./fonts/Modeseven-L3n5.ttf') format('truetype');
+}
+
