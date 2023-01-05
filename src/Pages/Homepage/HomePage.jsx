@@ -2,8 +2,8 @@ import React  from 'react';
 import { Container, Box, AppBar, Toolbar, Button, Avatar, ThemeProvider, Typography } from '@mui/material';
 import initial from '../../images/initial.png';
 import { theme } from '../../App';
-import arrow  from '../../images/arrow.svg';
 import './HomePage.css';
+import { Skills } from '../../Components/Skills/skills';
 
 export function HomePage() {
 
@@ -11,8 +11,8 @@ export function HomePage() {
 
 	return (
 		<ThemeProvider theme={theme}>
-			<Box sx={{display: 'flex', justifyContent: 'center'}}>
-				<Container className='homepage' maxWidth={false} disableGutters sx={{display: 'flex', flexDirection: 'column',alignItems: 'center', width: '100%', ml: 3, mr: 3, mt: 3, borderRadius: '15px'}}>
+			<Box sx={{display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', pl: 3, pr: 3, overflow: 'hidden'}}>
+				<Container className='homepage' maxWidth={false} disableGutters sx={{position: 'relative', display: 'flex', flexDirection: 'column',alignItems: 'center', width: '100%', mt: 3, mb: '800px',  borderRadius: '15px', overflow: 'hidden'}}>
 					<AppBar component='nav' position='absolute' elevation={0} sx={{width: '100%', backgroundColor: 'transparent',p: 2, mt: 4}} >
 						<Toolbar >
 							<Box sx={{flexGrow: 1, width: '100%'}}>
@@ -55,6 +55,7 @@ export function HomePage() {
 						</Box>
 					</Box>
 				</Container>
+				<Skills />
 			</Box>
 		</ThemeProvider>
 	)

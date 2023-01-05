@@ -11,35 +11,19 @@
 }
 
 .bird-box-one {
-	animation: fly-across-1;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-	animation-duration: 10s;
-	animation-delay: 1s;
+	animation: fly-across-1 10s linear infinite 3s;
 }
 
 .bird-box-two {
-	animation: fly-across-1;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-	animation-duration: 12s;
-	animation-delay: 5s;
+	animation: fly-across-1 12s linear infinite 5s;
 }
 
 .bird-box-three {
-	animation: fly-across-2;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-	animation-duration: 13s;
-	animation-delay: 7s;
+	animation: fly-across-2 13s linear infinite 7s;
 }
 
 .bird-box-four {
-	animation: fly-across-2;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-	animation-duration: 13s;
-	animation-delay: 9s;
+	animation: fly-across-2 13s linear infinite 9s;
 }
 
 .bird {
@@ -80,6 +64,9 @@
 	background-attachment: fixed;
 	width: 100vw;
 	min-height: 94vh;
+}
+.logo {
+	position: absolute;
 }
 
 .logo-2 {
