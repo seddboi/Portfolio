@@ -7,7 +7,7 @@ import './App.css';
 
 export const theme = createTheme({
   typography: {
-    'fontFamily': "'Modeseven', 'Arial', sans-serif",
+    'fontFamily': "'ShareTech', 'Arial', sans-serif",
     'fontSize': 22,
     button: {
       textTransform: 'none'
@@ -15,7 +15,7 @@ export const theme = createTheme({
   }, palette: {
     primary: {
       main: '#ffffff',
-      dark: 'E8E8E8'
+      dark: '#E8E8E8'
     },
     secondary: {
       main: '#F05454'

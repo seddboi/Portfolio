@@ -22,14 +22,13 @@
 }
 
 @font-face {
-  font-family: 'Bitwise';
-  src: local('Bitwise'),
-    url('./fonts/Bitwise-m19x.ttf') format('truetype');
+  font-family: 'ShareTech';
+  src: local('ShareTech'),
+    url('./fonts/ShareTech-Regular.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'Modeseven';
-  src: local('Modeseven'),
-    url('./fonts/Modeseven-L3n5.ttf') format('truetype');
+  font-family: '3dlet';
+  src: local('3dlet'), 
+    url('./fonts/3dlet.ttf') format('truetype');
 }
-
