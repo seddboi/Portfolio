@@ -89,7 +89,7 @@
 
 #letter {
 	opacity: 0;
-	animation: rise-in 1s cubic-bezier(0.34, 0.98, 0.83, 1.02) forwards;
+	animation: rise-in 0.7s cubic-bezier(0.34, 0.98, 0.83, 1.02) forwards;
 }
 
 .firstname #letter:nth-child(1) {

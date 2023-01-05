@@ -28,18 +28,18 @@ export function HomePage() {
 					<Box className='bird-box bird-box-four'><Box className='bird bird-four'></Box></Box>
 					<Box className='logo' sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100%'}}>
 							<Box className='firstname' sx={{display: 'flex', flexDirection: 'row'}}>
-								<Typography id='letter' sx={{fontFamily: "'3dlet'", lineHeight: '0.9em', fontSize: {md: '150px', sm: '130px',  xs: '75px'}}}>G</Typography>
-								<Typography id='letter' sx={{fontFamily: "'3dlet'", lineHeight: '0.9em', fontSize: {md: '150px', sm: '130px',  xs: '75px'}}}>I</Typography>
-								<Typography id='letter' sx={{fontFamily: "'3dlet'", lineHeight: '0.9em', fontSize: {md: '150px', sm: '130px',  xs: '75px'}}}>A</Typography>
-								<Typography id='letter' sx={{fontFamily: "'3dlet'", lineHeight: '0.9em', fontSize: {md: '150px', sm: '130px',  xs: '75px'}}}>N</Typography> 
+								<Typography id='letter' sx={{fontFamily: "'3dlet'", lineHeight: '0.9em', fontSize: {md: '150px', sm: '130px',  xs: '75px'}, textShadow: '0 4px 7px #000'}}>G</Typography>
+								<Typography id='letter' sx={{fontFamily: "'3dlet'", lineHeight: '0.9em', fontSize: {md: '150px', sm: '130px',  xs: '75px'}, textShadow: '0 4px 7px #000'}}>I</Typography>
+								<Typography id='letter' sx={{fontFamily: "'3dlet'", lineHeight: '0.9em', fontSize: {md: '150px', sm: '130px',  xs: '75px'}, textShadow: '0 4px 7px #000'}}>A</Typography>
+								<Typography id='letter' sx={{fontFamily: "'3dlet'", lineHeight: '0.9em', fontSize: {md: '150px', sm: '130px',  xs: '75px'}, textShadow: '0 4px 7px #000'}}>N</Typography> 
 							</Box>
 							<Box className='lastname' sx={{display: 'flex', flexDirection: 'row'}}>
-								<Typography id='letter' variant='h6' sx={{fontFamily: "'3dlet'", lineHeight: '0.9em', fontSize: {md: '150px', sm: '130px',  xs: '75px'}}}>Z</Typography>
-								<Typography id='letter' sx={{fontFamily: "'3dlet'", lineHeight: '0.9em', fontSize: {md: '150px', sm: '130px',  xs: '75px'}}}>A</Typography>
-								<Typography id='letter' sx={{fontFamily: "'3dlet'", lineHeight: '0.9em', fontSize: {md: '150px', sm: '130px',  xs: '75px'}}}>M</Typography>
-								<Typography id='letter' sx={{fontFamily: "'3dlet'", lineHeight: '0.9em', fontSize: {md: '150px', sm: '130px',  xs: '75px'}}}>O</Typography>
-								<Typography id='letter' sx={{fontFamily: "'3dlet'", lineHeight: '0.9em', fontSize: {md: '150px', sm: '130px',  xs: '75px'}}}>R</Typography>
-								<Typography id='letter' sx={{fontFamily: "'3dlet'", lineHeight: '0.9em', fontSize: {md: '150px', sm: '130px',  xs: '75px'}}}>A</Typography>
+								<Typography id='letter' sx={{fontFamily: "'3dlet'", lineHeight: '0.9em', fontSize: {md: '150px', sm: '130px',  xs: '75px'}, textShadow: '0 4px 7px #000'}}>Z</Typography>
+								<Typography id='letter' sx={{fontFamily: "'3dlet'", lineHeight: '0.9em', fontSize: {md: '150px', sm: '130px',  xs: '75px'}, textShadow: '0 4px 7px #000'}}>A</Typography>
+								<Typography id='letter' sx={{fontFamily: "'3dlet'", lineHeight: '0.9em', fontSize: {md: '150px', sm: '130px',  xs: '75px'}, textShadow: '0 4px 7px #000'}}>M</Typography>
+								<Typography id='letter' sx={{fontFamily: "'3dlet'", lineHeight: '0.9em', fontSize: {md: '150px', sm: '130px',  xs: '75px'}, textShadow: '0 4px 7px #000'}}>O</Typography>
+								<Typography id='letter' sx={{fontFamily: "'3dlet'", lineHeight: '0.9em', fontSize: {md: '150px', sm: '130px',  xs: '75px'}, textShadow: '0 4px 7px #000'}}>R</Typography>
+								<Typography id='letter' sx={{fontFamily: "'3dlet'", lineHeight: '0.9em', fontSize: {md: '150px', sm: '130px',  xs: '75px'}, textShadow: '0 4px 7px #000'}}>A</Typography>
 							</Box>
 						<Typography className='logo-2' sx={{fontSize: {sm: '50px', xs: '40px'}}}>Full Stack Web Developer</Typography>
 					</Box>
