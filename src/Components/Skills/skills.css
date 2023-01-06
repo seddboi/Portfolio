@@ -3,7 +3,7 @@
 }
 
 .title-animation {
-	animation: diagonal-in 0.5s cubic-bezier(0.5, 0.95, 0.82, 1.01) forwards;
+	animation: diagonal-in 0.2s cubic-bezier(0.5, 0.95, 0.82, 1.01) forwards;
 }
 
 .title-wrapper .title-animation:nth-child(1) {

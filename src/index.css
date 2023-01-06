@@ -32,3 +32,9 @@
   src: local('3dlet'), 
     url('./fonts/3dlet.ttf') format('truetype');
 }
+
+@font-face {
+  font-family: 'Bronson';
+  src: local('BRONSON-black'),
+    url('./fonts/BRONSON-Black.ttf') format('truetype');
+}
