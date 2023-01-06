@@ -19,7 +19,7 @@ export function HomePage() {
 								<Avatar alt='g logo' src={initial} sx={{height: 60, width: 60}}/>
 							</Box>
 							<Box edge='end' sx={{display: 'flex', flexDirection: 'row'}}>
-								{navButtons.map((item, index) => (<Button key={index} className='font-link' color='primary' variant='outlined' sx={{color: '#ffffff', m: 1, maxWidth: '120px', maxHeight: '42px', borderRadius: '10px'}}>{item.name}</Button>))}
+								{navButtons.map((item, index) => (<Button key={index} className='font-link' color='primary' variant='outlined' sx={{color: '#ffffff', margin: '5px', maxHeight: '42px', borderRadius: '10px', fontSize: {md: '30px', xs: '20px'}}}>{item.name}</Button>))}
 							</Box>
 						</Toolbar>
 					</AppBar>
@@ -29,18 +29,18 @@ export function HomePage() {
 					<Box className='bird-box bird-box-four'><Box className='bird bird-four'></Box></Box>
 					<Box className='logo' sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100%'}}>
 						<Box className='firstname' sx={{display: 'flex', flexDirection: 'row'}}>
-							<Typography id='letter' sx={{fontFamily: "'3dlet'", lineHeight: '0.9em', fontSize: {md: '150px', sm: '130px',  xs: '75px'}, textShadow: '0 5px 7px #000'}}>G</Typography>
-							<Typography id='letter' sx={{fontFamily: "'3dlet'", lineHeight: '0.9em', fontSize: {md: '150px', sm: '130px',  xs: '75px'}, textShadow: '0 5px 8px #000'}}>I</Typography>
-							<Typography id='letter' sx={{fontFamily: "'3dlet'", lineHeight: '0.9em', fontSize: {md: '150px', sm: '130px',  xs: '75px'}, textShadow: '0 5px 8px #000'}}>A</Typography>
-							<Typography id='letter' sx={{fontFamily: "'3dlet'", lineHeight: '0.9em', fontSize: {md: '150px', sm: '130px',  xs: '75px'}, textShadow: '0 5px 8px #000'}}>N</Typography> 
+							<Typography id='letter' sx={{fontSize: {md: '110px', sm: '90px',  xs: '55px',}}}>G</Typography>
+							<Typography id='letter' sx={{fontSize: {md: '110px', sm: '90px',  xs: '55px'}}}>I</Typography>
+							<Typography id='letter' sx={{fontSize: {md: '110px', sm: '90px',  xs: '55px'}}}>A</Typography>
+							<Typography id='letter' sx={{fontSize: {md: '110px', sm: '90px',  xs: '55px'}}}>N</Typography> 
 						</Box>
 						<Box className='lastname' sx={{display: 'flex', flexDirection: 'row'}}>
-							<Typography id='letter' sx={{fontFamily: "'3dlet'", lineHeight: '0.9em', fontSize: {md: '150px', sm: '130px',  xs: '75px'}, textShadow: '0 5px 8px #000'}}>Z</Typography>
-							<Typography id='letter' sx={{fontFamily: "'3dlet'", lineHeight: '0.9em', fontSize: {md: '150px', sm: '130px',  xs: '75px'}, textShadow: '0 5px 8px #000'}}>A</Typography>
-							<Typography id='letter' sx={{fontFamily: "'3dlet'", lineHeight: '0.9em', fontSize: {md: '150px', sm: '130px',  xs: '75px'}, textShadow: '0 5px 8px #000'}}>M</Typography>
-							<Typography id='letter' sx={{fontFamily: "'3dlet'", lineHeight: '0.9em', fontSize: {md: '150px', sm: '130px',  xs: '75px'}, textShadow: '0 5px 8px #000'}}>O</Typography>
-							<Typography id='letter' sx={{fontFamily: "'3dlet'", lineHeight: '0.9em', fontSize: {md: '150px', sm: '130px',  xs: '75px'}, textShadow: '0 5px 8px #000'}}>R</Typography>
-							<Typography id='letter' sx={{fontFamily: "'3dlet'", lineHeight: '0.9em', fontSize: {md: '150px', sm: '130px',  xs: '75px'}, textShadow: '0 5px 8px #000'}}>A</Typography>
+							<Typography id='letter' sx={{fontSize: {md: '110px', sm: '90px',  xs: '55px'}}}>Z</Typography>
+							<Typography id='letter' sx={{fontSize: {md: '110px', sm: '90px',  xs: '55px'}}}>A</Typography>
+							<Typography id='letter' sx={{fontSize: {md: '110px', sm: '90px',  xs: '55px'}}}>M</Typography>
+							<Typography id='letter' sx={{fontSize: {md: '110px', sm: '90px',  xs: '55px'}}}>O</Typography>
+							<Typography id='letter' sx={{fontSize: {md: '110px', sm: '90px',  xs: '55px'}}}>R</Typography>
+							<Typography id='letter' sx={{fontSize: {md: '110px', sm: '90px',  xs: '55px'}}}>A</Typography>
 						</Box>
 						<Typography className='logo-2' sx={{fontSize: {sm: '50px', xs: '40px'}}}>Full Stack Web Developer</Typography>
 						<Box sx={{position: 'absolute', bottom: '1px'}}>
