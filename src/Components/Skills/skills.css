@@ -1,4 +1,8 @@
 .title {
+	color: var(--white);
+	font-family: 'Bronson' !important;
+	line-height: 0.9em;
+	text-shadow: 0 3px 3px #000;
 	opacity: 0;
 }
 
