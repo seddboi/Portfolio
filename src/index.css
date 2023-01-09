@@ -16,21 +16,9 @@
 }
 
 @font-face {
-  font-family: 'Sacramento';
-  src: local('Sacramento'), 
-    url('./fonts/Sacramento-Regular.ttf') format('truetype');
-}
-
-@font-face {
   font-family: 'ShareTech';
   src: local('ShareTech'),
     url('./fonts/ShareTech-Regular.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: '3dlet';
-  src: local('3dlet'), 
-    url('./fonts/3dlet.ttf') format('truetype');
 }
 
 @font-face {
