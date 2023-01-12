@@ -11,7 +11,7 @@ export function HomePage() {
 
 	return (
 		<ThemeProvider theme={theme}>
-			<Box sx={{display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', pl: 3, pr: 3, overflow: 'hidden'}}>
+			<Box sx={{display: 'flex', flexDirection: 'column', pl: 3, pr: 3, height: '150vh', width: 'auto'}}>
 				<Container className='homepage' maxWidth={false} disableGutters sx={{position: 'relative', display: 'flex', flexDirection: 'column',alignItems: 'center', width: '100%', mt: 3, mb: '800px',  borderRadius: '15px', overflow: 'hidden'}}>
 					<AppBar component='nav' position='absolute' elevation={0} sx={{width: '100%', backgroundColor: 'transparent',p: 2, mt: 4}} >
 						<Toolbar >
@@ -55,6 +55,13 @@ export function HomePage() {
 						</Box>
 					</Box>
 				</Container>
+			</Box>
+			<Box sx={{height: '500vh'}}>
+				<Box className='peaks'>
+					<svg viewBox="0 0 900 600" width="900" height="600" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" version="1.1">
+						<path d="M0 438L35 309L69 389L104 186L138 256L173 170L208 176L242 226L277 321L312 180L346 255L381 221L415 405L450 302L485 217L519 310L554 332L588 399L623 232L658 366L692 439L727 342L762 318L796 431L831 239L865 386L900 388L900 601L865 601L831 601L796 601L762 601L727 601L692 601L658 601L623 601L588 601L554 601L519 601L485 601L450 601L415 601L381 601L346 601L312 601L277 601L242 601L208 601L173 601L138 601L104 601L69 601L35 601L0 601Z" fill="#222831" strokeLinecap="square" strokeLinejoin="bevel"></path>
+					</svg>
+				</Box>
 				<Skills />
 			</Box>
 		</ThemeProvider>

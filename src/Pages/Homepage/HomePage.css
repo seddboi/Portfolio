@@ -1,3 +1,13 @@
+.peaks {
+	width: 100vw;
+	line-height: 0;
+}
+
+.peaks svg {
+	width: 100vw;
+	height:auto;
+}
+
 .css-17ey7gq-MuiContainer-root {
 	min-width: 100%;
 }
@@ -29,7 +39,7 @@
 .bird {
 	background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/174479/bird-cells-new.svg);
 	background-size: auto 100%;
-	width: 22px;
+	width: 24px;
 	height: 31.25px;
 	will-change: background-position;
 	animation: flying;
