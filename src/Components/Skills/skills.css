@@ -1,7 +1,3 @@
-.skills-main-box-animation {
-	animation: background-fade-in 1s ease forwards;
-}
-
 .title {
 	color: var(--white);
 	font-family: 'Bronson' !important;
@@ -37,6 +33,12 @@
 	animation-delay: 1.3s; 
 }
 
+.react-logo svg {
+	animation: rotate-logo 10s infinite linear;
+	width: 100%;
+	height: 100%;
+}
+
 @keyframes diagonal-in { 
 	0% {
 		opacity: 1;
@@ -48,17 +50,8 @@
 	}
 }
 
-@keyframes background-fade-in {
+@keyframes rotate-logo {
 	100% {
-		background-color: #30475E;
-	}
-}
-
-@keyframes background-fade-out {
-	0% {
-		background-color: #30475E;
-	}
-	100% {
-		background-color: var(--white);
+		transform: rotate(360deg);
 	}
 }

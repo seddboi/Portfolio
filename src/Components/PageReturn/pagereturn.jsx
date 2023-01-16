@@ -1,13 +1,13 @@
 import React from 'react';
-import { Container, Box, Typography, ThemeProvider } from '@mui/material';
+import { Box, Typography, ThemeProvider } from '@mui/material';
 import { theme } from '../../App';
 
 
 export function PageReturn() {
 	return (
 		<ThemeProvider theme={theme}>
-			<Box className='peaks' sx={{position: 'absolute'}}>
-				<svg id="visual" viewBox="0 0 900 500" width="900" height="500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+			<Box className='peaks' sx={{position: 'relative', height: '100vh', width: '100vw'}}>
+				<svg id="visual" viewBox="0 0 900 500" width="900" height="500" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" version="1.1">
 					<path d="M0 305L113 343L225 269L338 270L450 315L563 254L675 269L788 320L900 313L900 0L788 0L675 0L563 0L450 0L338 0L225 0L113 0L0 0Z" fill="#5c739d"></path>
 					<path d="M0 247L113 201L225 266L338 279L450 217L563 218L675 278L788 203L900 254L900 0L788 0L675 0L563 0L450 0L338 0L225 0L113 0L0 0Z" fill="#556d94"></path>
 					<path d="M0 252L113 243L225 201L338 224L450 187L563 230L675 197L788 172L900 243L900 0L788 0L675 0L563 0L450 0L338 0L225 0L113 0L0 0Z" fill="#4e668b"></path>
