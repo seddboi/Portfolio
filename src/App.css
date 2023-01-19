@@ -1,12 +1,13 @@
 :root {
-  --white: #ffffff;
-  --lightgrey: #E8E8E8;
-  --mango: #F05454;
-  --mediumblue: #30475E;
-  --darkblue: #222831;
+	--white: #ffffff;
+	--lightgrey: #e8e8e8;
+	--mango: #f05454;
+	--mediumblue: #30475e;
+	--darkblue: #222831;
 }
 
 #root {
-  background-color: #ffffff;
-  text-align: center;
+	background-color: #ffffff;
+	text-align: center;
+	background-color: #30475e;
 }
