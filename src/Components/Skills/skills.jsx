@@ -44,7 +44,7 @@ export function Skills() {
 						<Box
 							className="title-wrapper"
 							ref={myRef}
-							sx={{ display: 'flex', flexDirection: 'row', zIndex: 9999, position: 'sticky', top: 0, ml: 2, mb: 10 }}
+							sx={{ display: 'flex', flexDirection: 'row', zIndex: 9999, position: 'sticky', top: 0, ml: 2 }}
 						>
 							<Typography className="title" sx={{ fontSize: { md: '130px', sm: '100px', xs: '65px' } }}>
 								S
@@ -199,7 +199,7 @@ export function Skills() {
 									borderRadius: '15px',
 								}}
 							>
-								<Box>
+								<Box sx={{ height: '100%', display: 'flex', alignItems: 'center' }}>
 									<ReactSVG className="logo postgresql-animate" src="src/images/postgresql.svg" />
 								</Box>
 								<Typography
@@ -211,21 +211,32 @@ export function Skills() {
 								</Typography>
 							</Box>
 
-							{/*<Box
+							<Box
 								className="logo-card"
 								sx={{
+									width: { md: '20vw', sm: '30vw' },
 									display: 'flex',
-									justifyContent: 'center',
-									alignItems: 'center',
 									flexDirection: 'column',
-									alignSelf: 'start',
+									justifyContent: 'space-between',
+									alignItems: 'center',
+									m: 3,
+									pt: 1,
+									pb: 1,
+									backgroundColor: 'rgba(66, 73, 73, .5)',
+									borderRadius: '15px',
 								}}
 							>
-								<ReactSVG className="logo github-animate" src="src/images/github.svg" />
-								<Typography variant="h4" className="logo-titles" sx={{ m: 1, userSelect: 'none' }}>
+								<Box sx={{ height: '100%', display: 'flex', alignItems: 'center' }}>
+									<ReactSVG className="logo github-animate" src="src/images/github.svg" />
+								</Box>
+								<Typography
+									variant="h4"
+									className="logo-titles"
+									sx={{ pl: 1, pr: 1, userSelect: 'none', fontSize: { lg: '70px', md: '55px', sm: '35px' } }}
+								>
 									Github
 								</Typography>
-							</Box> */}
+							</Box>
 						</Box>
 					</Container>
 				</Container>
