@@ -44,29 +44,58 @@ export function Skills() {
 						disableGutters
 						className="skills-scroll"
 						maxWidth="false"
-						sx={{ height: { xs: '250vh', sm: '180vh', md: '150vh' }, display: 'flex', flexDirection: 'column' }}
+						sx={{
+							height: { xs: '250vh', sm: '180vh', md: '150vh' },
+							display: 'flex',
+							flexDirection: 'column',
+							justifyContent: 'flex-start',
+						}}
 					>
 						<Box
 							className="title-wrapper"
 							ref={myRef}
-							sx={{ display: 'flex', flexDirection: 'row', zIndex: 9999, position: 'sticky', top: 0, ml: 2 }}
+							sx={{ display: 'flex', flexDirection: 'row', position: 'sticky', top: '20px', ml: 2, zIndex: '1' }}
 						>
-							<Typography className="title" sx={{ userSelect: 'none', fontSize: { md: '130px', sm: '100px', xs: '65px' } }}>
+							<Typography
+								className="title"
+								variant="p"
+								sx={{ userSelect: 'none', fontSize: { md: '130px', sm: '100px', xs: '65px' } }}
+							>
 								S
 							</Typography>
-							<Typography className="title" sx={{ userSelect: 'none', fontSize: { md: '130px', sm: '100px', xs: '65px' } }}>
+							<Typography
+								className="title"
+								variant="p"
+								sx={{ userSelect: 'none', fontSize: { md: '130px', sm: '100px', xs: '65px' } }}
+							>
 								k
 							</Typography>
-							<Typography className="title" sx={{ userSelect: 'none', fontSize: { md: '130px', sm: '100px', xs: '65px' } }}>
+							<Typography
+								className="title"
+								variant="p"
+								sx={{ userSelect: 'none', fontSize: { md: '130px', sm: '100px', xs: '65px' } }}
+							>
 								i
 							</Typography>
-							<Typography className="title" sx={{ userSelect: 'none', fontSize: { md: '130px', sm: '100px', xs: '65px' } }}>
+							<Typography
+								className="title"
+								variant="p"
+								sx={{ userSelect: 'none', fontSize: { md: '130px', sm: '100px', xs: '65px' } }}
+							>
 								l
 							</Typography>
-							<Typography className="title" sx={{ userSelect: 'none', fontSize: { md: '130px', sm: '100px', xs: '65px' } }}>
+							<Typography
+								className="title"
+								variant="p"
+								sx={{ userSelect: 'none', fontSize: { md: '130px', sm: '100px', xs: '65px' } }}
+							>
 								l
 							</Typography>
-							<Typography className="title" sx={{ userSelect: 'none', fontSize: { md: '130px', sm: '100px', xs: '65px' } }}>
+							<Typography
+								className="title"
+								variant="p"
+								sx={{ userSelect: 'none', fontSize: { md: '130px', sm: '100px', xs: '65px' } }}
+							>
 								s
 							</Typography>
 						</Box>
@@ -77,7 +106,7 @@ export function Skills() {
 							alignItems="center"
 							rowSpacing={8}
 							columnSpacing={6}
-							sx={{ zIndex: '9998' }}
+							sx={{ mt: 10 }}
 						>
 							<Grid className="logo-card" alignItems="center" justifyContent="center" item md={3} sm={4} xs={6}>
 								<Box

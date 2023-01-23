@@ -122,7 +122,7 @@ export function HomePage() {
 								A
 							</Typography>
 						</Box>
-						<Typography className="logo-2" sx={{ fontSize: { sm: '50px', xs: '40px' } }}>
+						<Typography className="logo-2" variant="h4" sx={{ fontSize: { sm: '50px', xs: '40px' } }}>
 							Full Stack Web Developer
 						</Typography>
 						<Box sx={{ position: 'absolute', bottom: '1px' }}>
@@ -147,7 +147,7 @@ export function HomePage() {
 				</Container>
 			</Box>
 			<Box sx={{ backgroundColor: 'var(--white)' }}>
-				<Box className="peaks">
+				<Box className="peaks" sx={{ zIndex: '-1' }}>
 					<svg
 						viewBox="0 0 900 600"
 						width="900"
@@ -166,9 +166,9 @@ export function HomePage() {
 				</Box>
 				<Skills />
 			</Box>
-			{/* <Box sx={{backgroundColor: '#738FC1'}}>
+			<Box sx={{ backgroundColor: '#738FC1' }}>
 				<PageReturn />
-			</Box> */}
+			</Box>
 		</ThemeProvider>
 	);
 }
