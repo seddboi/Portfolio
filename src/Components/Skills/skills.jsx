@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Container, Box, Typography, ThemeProvider } from '@mui/material';
+import { Container, Box, Typography, ThemeProvider, Grid } from '@mui/material';
 import { theme } from '../../App';
 import { useInView } from 'react-intersection-observer';
 import { ReactSVG } from 'react-svg';
@@ -40,204 +40,326 @@ export function Skills() {
 							></path>
 						</svg>
 					</Box>
-					<Container disableGutters className="skills-scroll" maxWidth="false" sx={{ height: '200vh' }}>
+					<Container
+						disableGutters
+						className="skills-scroll"
+						maxWidth="false"
+						sx={{ height: { xs: '250vh', sm: '180vh', md: '150vh' }, display: 'flex', flexDirection: 'column' }}
+					>
 						<Box
 							className="title-wrapper"
 							ref={myRef}
 							sx={{ display: 'flex', flexDirection: 'row', zIndex: 9999, position: 'sticky', top: 0, ml: 2 }}
 						>
-							<Typography className="title" sx={{ fontSize: { md: '130px', sm: '100px', xs: '65px' } }}>
+							<Typography className="title" sx={{ userSelect: 'none', fontSize: { md: '130px', sm: '100px', xs: '65px' } }}>
 								S
 							</Typography>
-							<Typography className="title" sx={{ fontSize: { md: '130px', sm: '100px', xs: '65px' } }}>
+							<Typography className="title" sx={{ userSelect: 'none', fontSize: { md: '130px', sm: '100px', xs: '65px' } }}>
 								k
 							</Typography>
-							<Typography className="title" sx={{ fontSize: { md: '130px', sm: '100px', xs: '65px' } }}>
+							<Typography className="title" sx={{ userSelect: 'none', fontSize: { md: '130px', sm: '100px', xs: '65px' } }}>
 								i
 							</Typography>
-							<Typography className="title" sx={{ fontSize: { md: '130px', sm: '100px', xs: '65px' } }}>
+							<Typography className="title" sx={{ userSelect: 'none', fontSize: { md: '130px', sm: '100px', xs: '65px' } }}>
 								l
 							</Typography>
-							<Typography className="title" sx={{ fontSize: { md: '130px', sm: '100px', xs: '65px' } }}>
+							<Typography className="title" sx={{ userSelect: 'none', fontSize: { md: '130px', sm: '100px', xs: '65px' } }}>
 								l
 							</Typography>
-							<Typography className="title" sx={{ fontSize: { md: '130px', sm: '100px', xs: '65px' } }}>
+							<Typography className="title" sx={{ userSelect: 'none', fontSize: { md: '130px', sm: '100px', xs: '65px' } }}>
 								s
 							</Typography>
 						</Box>
-						<Box
-							className="skills-wrapper"
-							sx={{
-								position: 'relative',
-								zIndex: 9998,
-								display: 'flex',
-								flexDirection: 'row',
-								alignItems: 'stretch',
-								justifyContent: 'center',
-								flexWrap: 'wrap',
-								m: 2,
-							}}
+						<Grid
+							container
+							direction="row"
+							justifyContent="center"
+							alignItems="center"
+							rowSpacing={8}
+							columnSpacing={6}
+							sx={{ zIndex: '9998' }}
 						>
-							<Box
-								className="logo-card"
-								sx={{
-									width: { md: '20vw', sm: '30vw' },
-									display: 'flex',
-									flexDirection: 'column',
-									justifyContent: 'space-between',
-									alignItems: 'center',
-									m: 3,
-									pt: 1,
-									pb: 1,
-									backgroundColor: 'rgba(66, 73, 73, .5)',
-									borderRadius: '15px',
-								}}
-							>
-								<ReactSVG className="logo react-animate" src="src/images/react.svg" />
-								<Typography
-									variant="h4"
-									className="logo-titles"
-									sx={{ pl: 1, pr: 1, userSelect: 'none', fontSize: { lg: '75px', md: '60px', sm: '40px' } }}
+							<Grid className="logo-card" alignItems="center" justifyContent="center" item md={3} sm={4} xs={6}>
+								<Box
+									sx={{
+										height: '25vh',
+										display: 'flex',
+										flexDirection: 'column',
+										alignItems: 'center',
+										justifyContent: 'center',
+									}}
 								>
-									React
-								</Typography>
-							</Box>
-
-							<Box
-								className="logo-card"
-								sx={{
-									width: { md: '20vw', sm: '30vw' },
-									display: 'flex',
-									flexDirection: 'column',
-									justifyContent: 'space-between',
-									alignItems: 'center',
-									m: 3,
-									pt: 1,
-									pb: 1,
-									backgroundColor: 'rgba(66, 73, 73, .5)',
-									borderRadius: '15px',
-								}}
-							>
-								<Box sx={{ height: '100%', display: 'flex', alignItems: 'center' }}>
-									<ReactSVG className="logo nodejs-animate" src="src/images/nodejs.svg" />
+									<Box sx={{ height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+										<ReactSVG className="logo html5-animate" src="src/images/html.svg" />
+									</Box>
+									<Typography
+										variant="h4"
+										className="logo-titles"
+										sx={{ pl: 1, pr: 1, userSelect: 'none', fontSize: { xs: '35px', md: '40px' } }}
+									>
+										HTML5
+									</Typography>
 								</Box>
-								<Typography
-									variant="h4"
-									className="logo-titles"
-									sx={{ pl: 1, pr: 1, userSelect: 'none', fontSize: { lg: '75px', md: '60px', sm: '40px' } }}
-								>
-									NodeJS
-								</Typography>
-							</Box>
+							</Grid>
 
-							<Box
-								className="logo-card"
-								sx={{
-									width: { md: '20vw', sm: '30vw' },
-									display: 'flex',
-									flexDirection: 'column',
-									justifyContent: 'space-between',
-									alignItems: 'center',
-									m: 3,
-									pt: 1,
-									pb: 1,
-									backgroundColor: 'rgba(66, 73, 73, .5)',
-									borderRadius: '15px',
-								}}
-							>
-								<Box sx={{ height: '100%', display: 'flex', alignItems: 'center' }}>
-									<ReactSVG className="logo mysql-animate" src="src/images/mysql.svg" />
-								</Box>
-								<Typography
-									variant="h4"
-									className="logo-titles"
-									sx={{ pl: 1, pr: 1, userSelect: 'none', fontSize: { lg: '75px', md: '60px', sm: '40px' } }}
+							<Grid className="logo-card" item md={3} sm={4} xs={6}>
+								<Box
+									sx={{
+										height: '25vh',
+										display: 'flex',
+										flexDirection: 'column',
+										alignItems: 'center',
+										justifyContent: 'center',
+									}}
 								>
-									MySQL
-								</Typography>
-							</Box>
+									<Box sx={{ height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+										<ReactSVG className="logo css3-animate" src="src/images/css-3.svg" />
+									</Box>
+									<Typography
+										variant="h4"
+										className="logo-titles"
+										sx={{ pl: 1, pr: 1, userSelect: 'none', fontSize: { xs: '35px', md: '40px' } }}
+									>
+										CSS3
+									</Typography>
+								</Box>
+							</Grid>
 
-							<Box
-								className="logo-card"
-								sx={{
-									width: { md: '20vw', sm: '30vw' },
-									display: 'flex',
-									flexDirection: 'column',
-									justifyContent: 'space-between',
-									alignItems: 'center',
-									m: 3,
-									pt: 1,
-									pb: 1,
-									backgroundColor: 'rgba(66, 73, 73, .5)',
-									borderRadius: '15px',
-								}}
-							>
-								<Box sx={{ height: '100%', display: 'flex', alignItems: 'center' }}>
-									<ReactSVG className="logo express-animate" id="size-upgrade" src="src/images/express.svg" />
-								</Box>
-								<Typography
-									variant="h4"
-									className="logo-titles"
-									sx={{ pl: 1, pr: 1, userSelect: 'none', fontSize: { lg: '70px', md: '55px', sm: '35px' } }}
+							<Grid className="logo-card" item md={3} sm={4} xs={6}>
+								<Box
+									sx={{
+										height: '25vh',
+										display: 'flex',
+										flexDirection: 'column',
+										alignItems: 'center',
+										justifyContent: 'center',
+									}}
 								>
-									ExpressJS
-								</Typography>
-							</Box>
+									<Box sx={{ height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+										<ReactSVG className="logo react-animate" src="src/images/react.svg" />
+									</Box>
+									<Typography
+										variant="h4"
+										className="logo-titles"
+										sx={{ pl: 1, pr: 1, userSelect: 'none', fontSize: { xs: '35px', md: '40px' } }}
+									>
+										React
+									</Typography>
+								</Box>
+							</Grid>
 
-							<Box
-								className="logo-card"
-								sx={{
-									width: { md: '20vw', sm: '30vw' },
-									display: 'flex',
-									flexDirection: 'column',
-									justifyContent: 'space-between',
-									alignItems: 'center',
-									m: 3,
-									pt: 1,
-									pb: 1,
-									backgroundColor: 'rgba(66, 73, 73, .5)',
-									borderRadius: '15px',
-								}}
-							>
-								<Box sx={{ height: '100%', display: 'flex', alignItems: 'center' }}>
-									<ReactSVG className="logo postgresql-animate" src="src/images/postgresql.svg" />
-								</Box>
-								<Typography
-									variant="h4"
-									className="logo-titles"
-									sx={{ pl: 1, pr: 1, userSelect: 'none', fontSize: { lg: '70px', md: '55px', sm: '35px' } }}
+							<Grid className="logo-card" item md={3} sm={4} xs={6}>
+								<Box
+									sx={{
+										height: '25vh',
+										display: 'flex',
+										flexDirection: 'column',
+										alignItems: 'center',
+										justifyContent: 'center',
+									}}
 								>
-									PostgreSQL
-								</Typography>
-							</Box>
+									<Box sx={{ height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+										<ReactSVG className="logo nodejs-animate" src="src/images/nodejs.svg" />
+									</Box>
+									<Typography
+										variant="h4"
+										className="logo-titles"
+										sx={{ pl: 1, pr: 1, userSelect: 'none', fontSize: { xs: '35px', md: '40px' } }}
+									>
+										NodeJS
+									</Typography>
+								</Box>
+							</Grid>
 
-							<Box
-								className="logo-card"
-								sx={{
-									width: { md: '20vw', sm: '30vw' },
-									display: 'flex',
-									flexDirection: 'column',
-									justifyContent: 'space-between',
-									alignItems: 'center',
-									m: 3,
-									pt: 1,
-									pb: 1,
-									backgroundColor: 'rgba(66, 73, 73, .5)',
-									borderRadius: '15px',
-								}}
-							>
-								<Box sx={{ height: '100%', display: 'flex', alignItems: 'center' }}>
-									<ReactSVG className="logo github-animate" src="src/images/github.svg" />
-								</Box>
-								<Typography
-									variant="h4"
-									className="logo-titles"
-									sx={{ pl: 1, pr: 1, userSelect: 'none', fontSize: { lg: '70px', md: '55px', sm: '35px' } }}
+							<Grid className="logo-card" item md={3} sm={4} xs={6}>
+								<Box
+									sx={{
+										height: '25vh',
+										display: 'flex',
+										flexDirection: 'column',
+										alignItems: 'center',
+										justifyContent: 'center',
+									}}
 								>
-									Github
-								</Typography>
-							</Box>
-						</Box>
+									<Box sx={{ height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+										<ReactSVG className="logo mysql-animate" src="src/images/mysql.svg" />
+									</Box>
+									<Typography
+										variant="h4"
+										className="logo-titles"
+										sx={{ pl: 1, pr: 1, userSelect: 'none', fontSize: { xs: '35px', md: '40px' } }}
+									>
+										MySQL
+									</Typography>
+								</Box>
+							</Grid>
+
+							<Grid className="logo-card" item md={3} sm={4} xs={6}>
+								<Box
+									sx={{
+										height: '25vh',
+										display: 'flex',
+										flexDirection: 'column',
+										alignItems: 'center',
+										justifyContent: 'center',
+									}}
+								>
+									<Box sx={{ height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+										<ReactSVG className="logo express-animate" id="size-upgrade" src="src/images/express.svg" />
+									</Box>
+									<Typography
+										variant="h4"
+										className="logo-titles"
+										sx={{ pl: 1, pr: 1, userSelect: 'none', fontSize: { xs: '35px', md: '40px' } }}
+									>
+										ExpressJS
+									</Typography>
+								</Box>
+							</Grid>
+
+							<Grid className="logo-card" item md={3} sm={4} xs={6}>
+								<Box
+									sx={{
+										height: '25vh',
+										display: 'flex',
+										flexDirection: 'column',
+										alignItems: 'center',
+										justifyContent: 'center',
+									}}
+								>
+									<Box sx={{ height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+										<ReactSVG className="logo react-router-animate" src="src/images/react-router.svg" />
+									</Box>
+									<Typography
+										variant="h4"
+										className="logo-titles"
+										sx={{
+											pl: 1,
+											pr: 1,
+											userSelect: 'none',
+											fontSize: { xs: '35px', md: '40px' },
+										}}
+									>
+										React Router
+									</Typography>
+								</Box>
+							</Grid>
+
+							<Grid className="logo-card" item md={3} sm={4} xs={6}>
+								<Box
+									sx={{
+										height: '25vh',
+										display: 'flex',
+										flexDirection: 'column',
+										alignItems: 'center',
+										justifyContent: 'center',
+									}}
+								>
+									<Box sx={{ height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+										<ReactSVG className="logo postgresql-animate" src="src/images/postgresql.svg" />
+									</Box>
+									<Typography
+										variant="h4"
+										className="logo-titles"
+										sx={{ pl: 1, pr: 1, userSelect: 'none', fontSize: { xs: '35px', md: '40px' } }}
+									>
+										PostgreSQL
+									</Typography>
+								</Box>
+							</Grid>
+
+							<Grid className="logo-card" item md={3} sm={4} xs={6}>
+								<Box
+									sx={{
+										height: '25vh',
+										display: 'flex',
+										flexDirection: 'column',
+										alignItems: 'center',
+										justifyContent: 'center',
+									}}
+								>
+									<Box sx={{ height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+										<ReactSVG className="logo github-animate" src="src/images/github.svg" />
+									</Box>
+									<Typography
+										variant="h4"
+										className="logo-titles"
+										sx={{ pl: 1, pr: 1, userSelect: 'none', fontSize: { xs: '35px', md: '40px' } }}
+									>
+										Github
+									</Typography>
+								</Box>
+							</Grid>
+
+							<Grid className="logo-card" item md={3} sm={4} xs={6}>
+								<Box
+									sx={{
+										height: '25vh',
+										display: 'flex',
+										flexDirection: 'column',
+										alignItems: 'center',
+										justifyContent: 'center',
+									}}
+								>
+									<Box sx={{ height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+										<ReactSVG className="logo git-animate" src="src/images/git.svg" />
+									</Box>
+									<Typography
+										variant="h4"
+										className="logo-titles"
+										sx={{ pl: 1, pr: 1, userSelect: 'none', fontSize: { xs: '35px', md: '40px' } }}
+									>
+										Git(bash)
+									</Typography>
+								</Box>
+							</Grid>
+
+							<Grid className="logo-card" item md={3} sm={4} xs={6}>
+								<Box
+									sx={{
+										height: '25vh',
+										display: 'flex',
+										flexDirection: 'column',
+										alignItems: 'center',
+										justifyContent: 'center',
+									}}
+								>
+									<Box sx={{ height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+										<ReactSVG className="logo vite-animate" src="src/images/vitejs.svg" />
+									</Box>
+									<Typography
+										variant="h4"
+										className="logo-titles"
+										sx={{ pl: 1, pr: 1, userSelect: 'none', fontSize: { xs: '35px', md: '40px' } }}
+									>
+										Vite
+									</Typography>
+								</Box>
+							</Grid>
+
+							<Grid className="logo-card" item md={3} sm={4} xs={6}>
+								<Box
+									sx={{
+										height: '25vh',
+										display: 'flex',
+										flexDirection: 'column',
+										alignItems: 'center',
+										justifyContent: 'center',
+									}}
+								>
+									<Box sx={{ height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+										<ReactSVG className="logo figma-animate" id="figma-downgrade" src="src/images/figma.svg" />
+									</Box>
+									<Typography
+										variant="h4"
+										className="logo-titles"
+										sx={{ pl: 1, pr: 1, userSelect: 'none', fontSize: { xs: '35px', md: '40px' } }}
+									>
+										Figma
+									</Typography>
+								</Box>
+							</Grid>
+						</Grid>
 					</Container>
 				</Container>
 			</Box>
