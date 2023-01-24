@@ -31,56 +31,56 @@ export function Projects() {
 					<Typography
 						variant="p"
 						className="title-letter"
-						sx={{ userSelect: 'none', fontSize: { xs: '15vw', sm: '12vw', md: '9vw' } }}
+						sx={{ userSelect: 'none', fontSize: { xs: '15vw', sm: '11vw', md: '9vw' } }}
 					>
 						P
 					</Typography>
 					<Typography
 						variant="p"
 						className="title-letter"
-						sx={{ userSelect: 'none', fontSize: { xs: '15vw', sm: '12vw', md: '9vw' } }}
+						sx={{ userSelect: 'none', fontSize: { xs: '13vw', sm: '11vw', md: '9vw' } }}
 					>
 						r
 					</Typography>
 					<Typography
 						variant="p"
 						className="title-letter"
-						sx={{ userSelect: 'none', fontSize: { xs: '15vw', sm: '12vw', md: '9vw' } }}
+						sx={{ userSelect: 'none', fontSize: { xs: '13vw', sm: '11vw', md: '9vw' } }}
 					>
 						o
 					</Typography>
 					<Typography
 						variant="p"
 						className="title-letter"
-						sx={{ userSelect: 'none', fontSize: { xs: '15vw', sm: '12vw', md: '9vw' } }}
+						sx={{ userSelect: 'none', fontSize: { xs: '13vw', sm: '11vw', md: '9vw' } }}
 					>
 						j
 					</Typography>
 					<Typography
 						variant="p"
 						className="title-letter"
-						sx={{ userSelect: 'none', fontSize: { xs: '15vw', sm: '12vw', md: '9vw' } }}
+						sx={{ userSelect: 'none', fontSize: { xs: '13vw', sm: '11vw', md: '9vw' } }}
 					>
 						e
 					</Typography>
 					<Typography
 						variant="p"
 						className="title-letter"
-						sx={{ userSelect: 'none', fontSize: { xs: '15vw', sm: '12vw', md: '9vw' } }}
+						sx={{ userSelect: 'none', fontSize: { xs: '13vw', sm: '11vw', md: '9vw' } }}
 					>
 						c
 					</Typography>
 					<Typography
 						variant="p"
 						className="title-letter"
-						sx={{ userSelect: 'none', fontSize: { xs: '15vw', sm: '12vw', md: '9vw' } }}
+						sx={{ userSelect: 'none', fontSize: { xs: '13vw', sm: '11vw', md: '9vw' } }}
 					>
 						t
 					</Typography>
 					<Typography
 						variant="p"
 						className="title-letter"
-						sx={{ userSelect: 'none', fontSize: { xs: '15vw', sm: '12vw', md: '9vw' } }}
+						sx={{ userSelect: 'none', fontSize: { xs: '13vw', sm: '11vw', md: '9vw' } }}
 					>
 						s
 					</Typography>

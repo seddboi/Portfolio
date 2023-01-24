@@ -57,42 +57,42 @@ export function Skills() {
 							<Typography
 								className="title"
 								variant="p"
-								sx={{ userSelect: 'none', fontSize: { xs: '15vw', sm: '12vw', md: '9vw' } }}
+								sx={{ userSelect: 'none', fontSize: { xs: '13vw', sm: '11vw', md: '9vw' } }}
 							>
 								S
 							</Typography>
 							<Typography
 								className="title"
 								variant="p"
-								sx={{ userSelect: 'none', fontSize: { xs: '15vw', sm: '12vw', md: '9vw' } }}
+								sx={{ userSelect: 'none', fontSize: { xs: '13vw', sm: '11vw', md: '9vw' } }}
 							>
 								k
 							</Typography>
 							<Typography
 								className="title"
 								variant="p"
-								sx={{ userSelect: 'none', fontSize: { xs: '15vw', sm: '12vw', md: '9vw' } }}
+								sx={{ userSelect: 'none', fontSize: { xs: '13vw', sm: '11vw', md: '9vw' } }}
 							>
 								i
 							</Typography>
 							<Typography
 								className="title"
 								variant="p"
-								sx={{ userSelect: 'none', fontSize: { xs: '15vw', sm: '12vw', md: '9vw' } }}
+								sx={{ userSelect: 'none', fontSize: { xs: '13vw', sm: '11vw', md: '9vw' } }}
 							>
 								l
 							</Typography>
 							<Typography
 								className="title"
 								variant="p"
-								sx={{ userSelect: 'none', fontSize: { xs: '15vw', sm: '12vw', md: '9vw' } }}
+								sx={{ userSelect: 'none', fontSize: { xs: '13vw', sm: '11vw', md: '9vw' } }}
 							>
 								l
 							</Typography>
 							<Typography
 								className="title"
 								variant="p"
-								sx={{ userSelect: 'none', fontSize: { xs: '15vw', sm: '12vw', md: '9vw' } }}
+								sx={{ userSelect: 'none', fontSize: { xs: '13vw', sm: '11vw', md: '9vw' } }}
 							>
 								s
 							</Typography>
