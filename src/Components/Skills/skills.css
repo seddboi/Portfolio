@@ -10,27 +10,27 @@
 }
 
 .title-wrapper .title-animation:nth-child(1) {
-	animation-delay: 150ms;
+	animation-delay: 100ms;
 }
 
 .title-wrapper .title-animation:nth-child(2) {
-	animation-delay: 300ms;
+	animation-delay: 200ms;
 }
 
 .title-wrapper .title-animation:nth-child(3) {
-	animation-delay: 450ms;
+	animation-delay: 300ms;
 }
 
 .title-wrapper .title-animation:nth-child(4) {
-	animation-delay: 600ms;
+	animation-delay: 400ms;
 }
 
 .title-wrapper .title-animation:nth-child(5) {
-	animation-delay: 750ms;
+	animation-delay: 500ms;
 }
 
 .title-wrapper .title-animation:nth-child(6) {
-	animation-delay: 900ms;
+	animation-delay: 600ms;
 }
 
 .logo-card {
