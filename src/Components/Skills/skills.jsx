@@ -13,8 +13,6 @@ export function Skills() {
 			document.querySelectorAll('.title').forEach((entry) => {
 				entry.classList.add('title-animation');
 			});
-
-			document.querySelector('.skills-main-box').classList.add('skills-main-box-animation');
 		}
 	}, [myElementIsVisible]);
 
@@ -59,42 +57,42 @@ export function Skills() {
 							<Typography
 								className="title"
 								variant="p"
-								sx={{ userSelect: 'none', fontSize: { md: '130px', sm: '100px', xs: '65px' } }}
+								sx={{ userSelect: 'none', fontSize: { xs: '15vw', sm: '12vw', md: '9vw' } }}
 							>
 								S
 							</Typography>
 							<Typography
 								className="title"
 								variant="p"
-								sx={{ userSelect: 'none', fontSize: { md: '130px', sm: '100px', xs: '65px' } }}
+								sx={{ userSelect: 'none', fontSize: { xs: '15vw', sm: '12vw', md: '9vw' } }}
 							>
 								k
 							</Typography>
 							<Typography
 								className="title"
 								variant="p"
-								sx={{ userSelect: 'none', fontSize: { md: '130px', sm: '100px', xs: '65px' } }}
+								sx={{ userSelect: 'none', fontSize: { xs: '15vw', sm: '12vw', md: '9vw' } }}
 							>
 								i
 							</Typography>
 							<Typography
 								className="title"
 								variant="p"
-								sx={{ userSelect: 'none', fontSize: { md: '130px', sm: '100px', xs: '65px' } }}
+								sx={{ userSelect: 'none', fontSize: { xs: '15vw', sm: '12vw', md: '9vw' } }}
 							>
 								l
 							</Typography>
 							<Typography
 								className="title"
 								variant="p"
-								sx={{ userSelect: 'none', fontSize: { md: '130px', sm: '100px', xs: '65px' } }}
+								sx={{ userSelect: 'none', fontSize: { xs: '15vw', sm: '12vw', md: '9vw' } }}
 							>
 								l
 							</Typography>
 							<Typography
 								className="title"
 								variant="p"
-								sx={{ userSelect: 'none', fontSize: { md: '130px', sm: '100px', xs: '65px' } }}
+								sx={{ userSelect: 'none', fontSize: { xs: '15vw', sm: '12vw', md: '9vw' } }}
 							>
 								s
 							</Typography>

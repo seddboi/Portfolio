@@ -4,7 +4,8 @@ import initial from '../../images/initial.png';
 import { theme } from '../../App';
 import './HomePage.css';
 import { Skills } from '../../Components/Skills/skills';
-import { PageReturn } from '../../Components/PageReturn/pagereturn';
+import { Projects } from '../../Components/Projects/projects';
+import { ReactSVG } from 'react-svg';
 
 export function HomePage() {
 	const navButtons = [
@@ -166,8 +167,23 @@ export function HomePage() {
 				</Box>
 				<Skills />
 			</Box>
-			<Box sx={{ backgroundColor: '#738FC1' }}>
-				<PageReturn />
+			{/* <Box
+				sx={{
+					width: '100%',
+					backgroundImage: 'url("src/images/layered-peaks.svg")',
+					aspectRatio: '960/300',
+					backgroundRepeat: 'no-repeat',
+					backgroundPosition: 'center',
+					backgroundSize: 'cover',
+				}}
+			>
+
+			</Box> */}
+			<Box sx={{ backgroundColor: '#738FC1', marginTop: { xs: '100vh', sm: '80vh', md: '70vh' } }}>
+				<Box className="bottom-peaks" sx={{ position: 'absolute', zIndex: 0 }}>
+					<ReactSVG className="layered-peaks" src="src/images/layered-peaks.svg" />
+				</Box>
+				<Projects />
 			</Box>
 		</ThemeProvider>
 	);

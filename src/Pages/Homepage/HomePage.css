@@ -5,7 +5,18 @@
 
 .peaks svg {
 	width: 100vw;
-	height:auto;
+	height: auto;
+}
+
+.layered-peaks {
+	width: 100vw;
+	line-height: 0;
+}
+
+.layered-peaks svg {
+	width: 100vw;
+	height: auto;
+	z-index: 0;
 }
 
 .css-17ey7gq-MuiContainer-root {
@@ -25,11 +36,11 @@
 }
 
 .bird-box-two {
-	animation: fly-across-1 12s linear infinite 5s;
+	animation: fly-across-2 12s linear infinite 5s;
 }
 
 .bird-box-three {
-	animation: fly-across-2 13s linear infinite 7s;
+	animation: fly-across-1 13s linear infinite 7s;
 }
 
 .bird-box-four {
@@ -141,7 +152,8 @@
 	fill: var(--lightgrey);
 }
 
-#dark1, #dark2 {
+#dark1,
+#dark2 {
 	transition: all 1s ease;
 }
 
@@ -228,36 +240,40 @@
 		opacity: 1;
 		transform: translate(0, 150vw) scale(3);
 	}
-	20%{
+	20% {
 		opacity: 1;
 		transform: translate(0, 70vw) scale(2);
 	}
 	50% {
 		opacity: 1;
-		transform: translate(0, -20vw)scale(1);
+		transform: translate(0, -20vw) scale(1);
 	}
 	100% {
 		opacity: 1;
 		transform: translate(0, 0);
 	}
-
-
 }
 
 @keyframes shift-tri-1 {
-	0%, 45%, 100% {
+	0%,
+	45%,
+	100% {
 		transform: translateY(0);
 	}
-	33%, 66% {
+	33%,
+	66% {
 		transform: translateY(-12%);
 	}
 }
 
 @keyframes shift-tri-2 {
-	0%, 45%, 100% {
+	0%,
+	45%,
+	100% {
 		transform: translateY(0);
 	}
-	33%, 66% {
+	33%,
+	66% {
 		transform: translateY(-15%);
 	}
 }
