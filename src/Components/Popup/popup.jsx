@@ -9,8 +9,10 @@ export function Popup({ open, handleClose, project }) {
 		<ThemeProvider theme={theme}>
 			<Dialog maxWidth="sm" fullWidth open={open} keepMounted onClose={handleClose} aria-describedby="project popup description">
 				<DialogContent>
-					<Typography variant="h4">{project.name}</Typography>
-					<Typography variant="h5">Tech Used:</Typography>
+					<Typography variant="h4" sx={{ fontSize: { xs: '12vw', sm: '9vw', md: '6vw', lg: '4vw', xl: '3vw' } }}>
+						{project.name}
+					</Typography>
+					<Typography variant="h6">Tech Used:</Typography>
 					<Box className="skills-box" sx={{ display: 'flex', justifyContent: 'space-around' }}>
 						{project.skillsUsed.map((link, i) => (
 							<Box key={i} sx={{ display: 'flex', alignItems: 'center' }}>
@@ -19,11 +21,14 @@ export function Popup({ open, handleClose, project }) {
 						))}
 					</Box>
 					<Divider orientation="horizontal" />
-					<Typography variant="h5">Building Process:</Typography>
-					<Typography variant="p" sx={{ fontFamily: 'Sharetech' }}>
-						{project.builtDesc}
+					<Typography variant="h6">Building Process:</Typography>
+					<Typography variant="body2" sx={{ fontFamily: 'Sharetech' }}>
+						{project.builtDesc.map((paragraph, i) => (
+							<p key={i}>&emsp;{paragraph}</p>
+						))}
 					</Typography>
-					<DialogActions>
+					<Divider orientation="horizontal" />
+					<DialogActions sx={{ mt: 2 }}>
 						<Button color="secondary" variant="contained" href={project.github} target="_blank">
 							Github
 						</Button>
