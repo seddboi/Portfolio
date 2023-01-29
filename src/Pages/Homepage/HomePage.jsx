@@ -179,7 +179,7 @@ export function HomePage() {
 			>
 
 			</Box> */}
-			<Box sx={{ backgroundColor: '#738FC1', marginTop: { xs: '100vh', sm: '80vh', md: '70vh' } }}>
+			<Box sx={{ backgroundColor: '#738FC1', marginTop: { xs: '90vh', sm: '80vh', md: '70vh' } }}>
 				<Box className="bottom-peaks" sx={{ position: 'absolute', zIndex: 0 }}>
 					<ReactSVG className="layered-peaks" src="src/images/layered-peaks.svg" />
 				</Box>

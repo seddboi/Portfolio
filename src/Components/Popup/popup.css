@@ -1,0 +1,11 @@
+.small-logo {
+	display: flex;
+	align-content: center;
+	width: 8vw;
+	position: relative;
+}
+
+.small-logo div svg {
+	width: 100%;
+	height: 100%;
+}
