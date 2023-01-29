@@ -40,6 +40,11 @@ const weathered = {
 	],
 	github: 'https://github.com/seddboi/Weathered',
 	live: 'https://clinquant-dieffenbachia-128d9b.netlify.app/',
+	images: [
+		{ path: 'src/images/weathered/pic1.png', alt: 'weathered landing page' },
+		{ path: 'src/images/weathered/pic2.png', alt: 'weathered weather forecast page' },
+		{ path: 'src/images/weathered/pic3.png', alt: 'bottom of forecast page (scroll)' },
+	],
 };
 
 const thtMchne = {
@@ -51,6 +56,10 @@ const thtMchne = {
 	],
 	github: 'https://github.com/seddboi/Thought-Machine',
 	live: 'https://seddboi.github.io/Thought-Machine/',
+	images: [
+		{ path: 'src/images/thoughtMachine/pic1.png', alt: 'thought machine landing page' },
+		{ path: 'src/images/thoughtMachine/pic2.png', alt: 'thought machine with new submissions' },
+	],
 };
 
 export function Projects() {
@@ -275,7 +284,7 @@ export function Projects() {
 								}}
 							>
 								<Carousel>
-									{pwdntr.images.map((item, i) => (
+									{weathered.images.map((item, i) => (
 										<Box
 											key={i}
 											component="img"
@@ -313,7 +322,7 @@ export function Projects() {
 								}}
 							>
 								<Carousel>
-									{pwdntr.images.map((item, i) => (
+									{thtMchne.images.map((item, i) => (
 										<Box
 											key={i}
 											component="img"
