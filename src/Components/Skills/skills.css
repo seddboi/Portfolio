@@ -33,19 +33,16 @@
 	animation-delay: 600ms;
 }
 
-.logo-card {
-	filter: grayscale(100%);
-	transition: all 0.1s ease-in-out;
-}
-
-.logo-card:hover {
-	transform: scale(1.1);
-	filter: grayscale(0%);
-}
-
 .logo {
+	transition: all 0.1s ease-in-out;
+	filter: grayscale(100%);
 	width: 100px;
 	position: relative;
+}
+
+.logo:hover {
+	transform: scale(1.3);
+	filter: grayscale(0%);
 }
 
 #size-upgrade {

@@ -52,7 +52,7 @@ export function Skills() {
 						<Box
 							className="title-wrapper"
 							ref={myRef}
-							sx={{ display: 'flex', flexDirection: 'row', position: 'sticky', top: '20px', ml: 2, zIndex: '1' }}
+							sx={{ display: 'flex', flexDirection: 'row', position: 'sticky', top: '20px', ml: 2, zIndex: 2 }}
 						>
 							<Typography
 								className="title"
@@ -104,7 +104,7 @@ export function Skills() {
 							alignItems="center"
 							rowSpacing={8}
 							columnSpacing={6}
-							sx={{ mt: 10 }}
+							sx={{ mt: 10, zIndex: 1 }}
 						>
 							<Grid className="logo-card" alignItems="center" justifyContent="center" item md={3} sm={4} xs={6}>
 								<Box
