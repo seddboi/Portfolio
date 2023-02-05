@@ -3,9 +3,10 @@ import { Container, Box, AppBar, Toolbar, Button, Avatar, ThemeProvider, Typogra
 import initial from '../../images/initial.png';
 import { theme } from '../../App';
 import './HomePage.css';
-import { Skills } from '../../Components/Skills/skills';
-import { Projects } from '../../Components/Projects/projects';
+import { Skills } from '../Skills/skills';
+import { Projects } from '../Projects/projects';
 import { ReactSVG } from 'react-svg';
+import { Contact } from '../Contact/contact';
 
 export function HomePage() {
 	const navButtons = [
@@ -148,7 +149,7 @@ export function HomePage() {
 				</Container>
 			</Box>
 
-			<Box sx={{ backgroundColor: 'var(--white)' }}>
+			<Box className="skills-plot" sx={{ backgroundColor: 'var(--white)' }}>
 				<Box className="peaks" sx={{ zIndex: '-1' }}>
 					<svg
 						viewBox="0 0 900 600"
@@ -170,6 +171,7 @@ export function HomePage() {
 			</Box>
 
 			<Box
+				className="projects-plot"
 				sx={{
 					backgroundColor: '#738FC1',
 					marginTop: { xs: '90vh', sm: '80vh', md: '70vh' },
@@ -183,6 +185,10 @@ export function HomePage() {
 				<Box className="top-projects-peaks" sx={{ position: 'absolute', zIndex: 0 }}>
 					<ReactSVG className="layered-peaks" src="src/images/bottom-projects.svg" />
 				</Box>
+			</Box>
+
+			<Box className="contact-me-plot">
+				<Contact />
 			</Box>
 		</ThemeProvider>
 	);
