@@ -90,7 +90,7 @@ export function Projects() {
 				disableGutters
 				maxWidth="false"
 				sx={{
-					height: { xs: '240vh', sm: '200vh', md: '160vw' },
+					height: { xs: '250vh', sm: '230vh', md: '190vw' },
 					display: 'flex',
 					flexDirection: 'column',
 				}}
@@ -164,11 +164,11 @@ export function Projects() {
 						position: 'sticky',
 						top: { xs: '15vh', sm: '15vh', md: '20vh' },
 						zIndex: 1,
-						backgroundColor: 'rgb(48, 71, 94, 0.7)',
 						height: { xs: '70vh', sm: '70vh', md: '70vh' },
 						width: { xs: '83vw', sm: '83vw', md: '85vw' },
 						alignSelf: 'center',
 						mt: { xs: '15vh', sm: '15vh', md: '25vh' },
+						mb: { xs: '80vh', sm: '70vh', md: '60vh' },
 						display: 'flex',
 						flexDirection: { xs: 'column', sm: 'column', md: 'row' },
 					}}
@@ -262,7 +262,7 @@ export function Projects() {
 							height: '100%',
 							pl: { xs: 3, sm: 3, md: 10 },
 							pr: { xs: 3, sm: 3, md: 10 },
-							backgroundColor: 'var(--white)',
+							backgroundColor: '#F8F9F9',
 							overflowY: 'scroll',
 						}}
 					>
@@ -271,10 +271,11 @@ export function Projects() {
 								variant="h4"
 								sx={{
 									color: 'var(--mango)',
-									fontSize: { xs: '10vw', sm: '10vw', md: '7vw' },
+									fontSize: { xs: '6vw', sm: '6vw', md: '5vw' },
 									mt: { xs: 2, sm: 2, md: 4 },
 									mb: { xs: 2, sm: 2, md: 4 },
 									userSelect: 'none',
+									fontFamily: 'Bronson',
 								}}
 							>
 								{project.name}
@@ -323,7 +324,7 @@ export function Projects() {
 									>
 										Tech Used:
 									</Typography>
-									<Grid container columnSpacing={3} rowSpacing={3} className="skill-svgs">
+									<Grid container columnSpacing={2} rowSpacing={3} className="skill-svgs">
 										{project.skillsUsed.map((svg, i) => (
 											<Grid item lg={6} md={3} sm={4} xs={6} display="flex" justifyContent="center" alignItems="center">
 												<Box

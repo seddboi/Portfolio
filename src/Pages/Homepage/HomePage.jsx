@@ -147,6 +147,7 @@ export function HomePage() {
 					</Box>
 				</Container>
 			</Box>
+
 			<Box sx={{ backgroundColor: 'var(--white)' }}>
 				<Box className="peaks" sx={{ zIndex: '-1' }}>
 					<svg
@@ -167,23 +168,21 @@ export function HomePage() {
 				</Box>
 				<Skills />
 			</Box>
-			{/* <Box
+
+			<Box
 				sx={{
-					width: '100%',
-					backgroundImage: 'url("src/images/layered-peaks.svg")',
-					aspectRatio: '960/300',
-					backgroundRepeat: 'no-repeat',
-					backgroundPosition: 'center',
-					backgroundSize: 'cover',
+					backgroundColor: '#738FC1',
+					marginTop: { xs: '90vh', sm: '80vh', md: '70vh' },
+					// marginBottom: { xs: '70vh', sm: '60vh', md: '40vh' },
 				}}
 			>
-
-			</Box> */}
-			<Box sx={{ backgroundColor: '#738FC1', marginTop: { xs: '90vh', sm: '80vh', md: '70vh' } }}>
-				<Box className="bottom-peaks" sx={{ position: 'absolute', zIndex: 0 }}>
+				<Box className="top-projects-peaks" sx={{ position: 'absolute', zIndex: 0 }}>
 					<ReactSVG className="layered-peaks" src="src/images/layered-peaks.svg" />
 				</Box>
 				<Projects />
+				<Box className="top-projects-peaks" sx={{ position: 'absolute', zIndex: 0 }}>
+					<ReactSVG className="layered-peaks" src="src/images/bottom-projects.svg" />
+				</Box>
 			</Box>
 		</ThemeProvider>
 	);
