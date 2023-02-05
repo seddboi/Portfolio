@@ -76,20 +76,6 @@ export function Contact() {
 					>
 						t
 					</Typography>
-					<Typography
-						variant="p"
-						className="title-element"
-						sx={{ userSelect: 'none', fontSize: { xs: '11vw', sm: '9vw', md: '8vw' } }}
-					>
-						M
-					</Typography>
-					<Typography
-						variant="p"
-						className="title-element"
-						sx={{ userSelect: 'none', fontSize: { xs: '11vw', sm: '9vw', md: '8vw' } }}
-					>
-						e
-					</Typography>
 				</Box>
 				<Box
 					className="contact-info-form"
@@ -108,7 +94,7 @@ export function Contact() {
 							action="https://formsubmit.co/e791774e6d0e5034a0811b324b9a8348"
 							method="POST"
 							sx={{
-								backgroundColor: 'var(--mediumblue)',
+								backgroundColor: 'rgb(33, 47, 60, 0.3)',
 								display: 'flex',
 								flexDirection: 'column',
 								justifyContent: 'center',
@@ -146,7 +132,7 @@ export function Contact() {
 								inputProps={{ style: { color: 'var(--white)' } }}
 								sx={{ mb: 5 }}
 							/>
-							<Button type="submit" variant="contained" color="secondary" size="small" sx={{ width: '10vw' }}>
+							<Button type="submit" variant="contained" size="small" sx={{ width: '13vw' }}>
 								Submit
 							</Button>
 						</Box>

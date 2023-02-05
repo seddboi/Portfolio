@@ -37,14 +37,6 @@
 	animation-delay: 700ms;
 }
 
-.contact-me-title .title-animation:nth-child(8) {
-	animation-delay: 800ms;
-}
-
-.contact-me-title .title-animation:nth-child(9) {
-	animation-delay: 900ms;
-}
-
 .link-logo {
 	display: flex;
 	justify-content: center;
