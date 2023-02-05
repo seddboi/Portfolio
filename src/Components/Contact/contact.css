@@ -44,3 +44,14 @@
 .contact-me-title .title-animation:nth-child(9) {
 	animation-delay: 900ms;
 }
+
+.link-logo {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.link-logo div svg {
+	width: 100%;
+	height: 100%;
+}

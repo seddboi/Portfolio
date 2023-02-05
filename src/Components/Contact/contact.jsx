@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
-import { Container, Box, ThemeProvider, Typography, Stack, Card, CardContent, Divider, Button } from '@mui/material';
+import { Container, Box, ThemeProvider, Typography, Button, TextField, InputBase } from '@mui/material';
 import { useInView } from 'react-intersection-observer';
+import { ReactSVG } from 'react-svg';
+import { theme } from '../../App';
 import './contact.css';
 
 export function Contact() {
@@ -14,7 +16,7 @@ export function Contact() {
 		}
 	}, [isContactTitleVisible]);
 	return (
-		<ThemeProvider>
+		<ThemeProvider theme={theme}>
 			<Container
 				className="contact-me-section"
 				maxWidth="false"
@@ -23,7 +25,7 @@ export function Contact() {
 				<Box
 					className="contact-me-title"
 					ref={contactme}
-					sx={{ display: 'flex', flexDirection: 'row', position: 'sticky', top: '20px', mb: 22, zIndex: 2 }}
+					sx={{ display: 'flex', flexDirection: 'row', position: 'sticky', top: '20px', mb: 10, zIndex: 1 }}
 				>
 					<Typography
 						variant="p"
@@ -88,6 +90,134 @@ export function Contact() {
 					>
 						e
 					</Typography>
+				</Box>
+				<Box
+					className="contact-info-form"
+					sx={{
+						position: 'relative',
+						display: 'flex',
+						justifyContent: 'center',
+						alignItems: 'center',
+						flexDirection: 'column',
+						zIndex: 2,
+					}}
+				>
+					<Box className="contact-form">
+						<Box
+							component="form"
+							action="https://formsubmit.co/e791774e6d0e5034a0811b324b9a8348"
+							method="POST"
+							sx={{
+								backgroundColor: 'var(--mediumblue)',
+								display: 'flex',
+								flexDirection: 'column',
+								justifyContent: 'center',
+								alignItems: 'center',
+								p: 5,
+								mb: 5,
+								width: '60vw',
+								height: '55vh',
+							}}
+						>
+							<TextField
+								variant="outlined"
+								label="Name"
+								size="small"
+								name="name"
+								fullWidth
+								sx={{ mb: 5, input: { color: 'var(--white)' } }}
+							/>
+							<TextField
+								variant="outlined"
+								label="Email"
+								size="small"
+								name="email"
+								fullWidth
+								sx={{ mb: 5, input: { color: 'var(--white)' } }}
+							/>
+							<TextField
+								variant="outlined"
+								label="Message"
+								size="small"
+								name="message"
+								multiline
+								rows={3}
+								fullWidth
+								inputProps={{ style: { color: 'var(--white)' } }}
+								sx={{ mb: 5 }}
+							/>
+							<Button type="submit" variant="contained" color="secondary" size="small" sx={{ width: '10vw' }}>
+								Submit
+							</Button>
+						</Box>
+					</Box>
+					<Box
+						className="links"
+						sx={{
+							display: 'flex',
+							flexDirection: 'row',
+							width: { xs: '100%', sm: '50%', md: '50%' },
+							justifyContent: 'space-around',
+							alignContent: 'center',
+						}}
+					>
+						<Button
+							className="icon-logo"
+							href="https://github.com/seddboi"
+							target="_blank"
+							sx={{
+								display: 'flex',
+								flexDirection: 'column',
+								alignSelf: 'center',
+								justifyContent: 'center',
+								width: { xs: '13vw', sm: '10vw', md: '5vw' },
+								position: 'relative',
+								background: 'transparent',
+								p: 0,
+								border: 'none',
+							}}
+						>
+							<ReactSVG className="link-logo" src="src/images/github.svg" />
+						</Button>
+
+						<Button
+							className="icon-logo"
+							href="https://www.linkedin.com/in/gian-zamora/"
+							target="_blank"
+							sx={{
+								display: 'flex',
+								flexDirection: 'column',
+								alignSelf: 'center',
+								justifyContent: 'center',
+								width: { xs: '13vw', sm: '10vw', md: '5vw' },
+								position: 'relative',
+								background: 'transparent',
+								p: 0,
+								border: 'none',
+							}}
+						>
+							<ReactSVG className="link-logo" src="src/images/linkedin.svg" />
+						</Button>
+
+						<Button
+							className="icon-logo"
+							href="https://docs.google.com/document/d/1hdytmMskYmSvmlLCi7IIPyM2keAfKw_lDbU9Xa83mWs/edit?usp=sharing"
+							target="_blank"
+							sx={{
+								display: 'flex',
+								flexDirection: 'column',
+								alignSelf: 'center',
+								justifyContent: 'center',
+								width: { xs: '15vw', sm: '13vw', md: '7vw' },
+								position: 'relative',
+								background: 'transparent',
+								p: 0,
+								border: 'none',
+							}}
+						>
+							<ReactSVG className="link-logo" src="src/images/resume-icon.svg" />
+						</Button>
+					</Box>
 				</Box>
 			</Container>
 		</ThemeProvider>

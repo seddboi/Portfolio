@@ -3,7 +3,6 @@ import { Container, Box, ThemeProvider, Typography, Drawer, Stack, Paper, Divide
 import { useInView } from 'react-intersection-observer';
 import { theme } from '../../App';
 import Carousel from 'react-material-ui-carousel';
-import { Popup } from '../Popup/popup';
 import './projects.css';
 import { ReactSVG } from 'react-svg';
 
@@ -18,8 +17,8 @@ const pwdntr = {
 	],
 	builtDesc: [
 		'This application started from the base of the old password generator that I created a while ago. It started off as just the password generation page, which I then just turned into a password generation component. From here, I established some new pages, such as the home page, saved passwords page, login page, signup page, and just a basic password generation page for generating passwords.',
-		'I then set up React Router, for navigation, as this was intended to be an single page application. For the login and sign up pages, I utilized JSON web tokens for user authentication (also for protection of proteted routes/pages). I then established different express routes that would allow me to provide CRUD funtionality to my app. After providing the ability to save/delete generated passwords, save/delete custom passwords, and the ability to update passwords, I then began to connect everything for production.',
-		'I hosted my back end, and database all on Railway, as they were one of the few sites who made it very simple. The front end is hosted on Netlify, as their fees for hosting are practically free.',
+		'I then set up React Router, for navigation, as this was intended to be an single page application. For the login and sign up pages, I utilized JSON web tokens for user authentication (also for protection of protected routes/pages). I then established different express routes that would allow me to provide CRUD funtionality to my app. After providing the ability to save/delete generated passwords, save/delete custom passwords, and the ability to update passwords.',
+		'I then began to connect everything for production. I hosted my back end and database on Railway, as they were one of the few sites who made it very simple. The front end is hosted on Netlify, as their fees for hosting are practically free.',
 	],
 	github: 'https://github.com/seddboi/passwordinator',
 	live: 'https://graceful-dango-eb28ce.netlify.app',
@@ -336,7 +335,7 @@ export function Projects() {
 														alignSelf: 'center',
 														justifyContent: 'center',
 														position: 'relative',
-														width: { xs: '17vw', sm: '14vw', md: '9vw' },
+														width: { xs: '17vw', sm: '14vw', md: '9vw', lg: '6vw' },
 													}}
 												>
 													<ReactSVG src={svg} />
