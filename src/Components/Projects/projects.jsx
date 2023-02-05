@@ -90,7 +90,7 @@ export function Projects() {
 				disableGutters
 				maxWidth="false"
 				sx={{
-					height: { xs: '250vh', sm: '230vh', md: '190vw' },
+					height: { xs: '240vh', sm: '220vh', md: '190vw' },
 					display: 'flex',
 					flexDirection: 'column',
 				}}
@@ -168,7 +168,7 @@ export function Projects() {
 						width: { xs: '83vw', sm: '83vw', md: '85vw' },
 						alignSelf: 'center',
 						mt: { xs: '15vh', sm: '15vh', md: '25vh' },
-						mb: { xs: '80vh', sm: '70vh', md: '60vh' },
+						mb: { xs: '50vh', sm: '45vh', md: '40vh' },
 						display: 'flex',
 						flexDirection: { xs: 'column', sm: 'column', md: 'row' },
 					}}

@@ -175,19 +175,20 @@ export function HomePage() {
 				sx={{
 					backgroundColor: '#738FC1',
 					marginTop: { xs: '90vh', sm: '80vh', md: '70vh' },
-					// marginBottom: { xs: '70vh', sm: '60vh', md: '40vh' },
 				}}
 			>
 				<Box className="top-projects-peaks" sx={{ position: 'absolute', zIndex: 0 }}>
 					<ReactSVG className="layered-peaks" src="src/images/layered-peaks.svg" />
 				</Box>
 				<Projects />
-				<Box className="top-projects-peaks" sx={{ position: 'absolute', zIndex: 0 }}>
-					<ReactSVG className="layered-peaks" src="src/images/bottom-projects.svg" />
-				</Box>
 			</Box>
 
+			<Box sx={{ backgroundColor: '#738FC1', height: '45vh', width: '100%' }}></Box>
+
 			<Box className="contact-me-plot">
+				<Box className="top-projects-peaks" sx={{ position: 'absolute', zIndex: 1 }}>
+					<ReactSVG className="layered-peaks" src="src/images/bottom-projects.svg" />
+				</Box>
 				<Contact />
 			</Box>
 		</ThemeProvider>
