@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Box, ThemeProvider, Typography, Stack, Card, CardContent, Divider, Button } from '@mui/material';
+import { Container, Box, ThemeProvider, Typography, Drawer, Stack, Paper, Divider, Grid, Button } from '@mui/material';
 import { useInView } from 'react-intersection-observer';
 import { theme } from '../../App';
 import Carousel from 'react-material-ui-carousel';
 import { Popup } from '../Popup/popup';
 import './projects.css';
+import { ReactSVG } from 'react-svg';
 
 const pwdntr = {
 	name: 'Passwordinator',
@@ -17,7 +18,7 @@ const pwdntr = {
 	],
 	builtDesc: [
 		'This application started from the base of the old password generator that I created a while ago. It started off as just the password generation page, which I then just turned into a password generation component. From here, I established some new pages, such as the home page, saved passwords page, login page, signup page, and just a basic password generation page for generating passwords.',
-		'I then set up React Router, for navigation, as this was intended to be an single page application. For the login and sign up pages, I utilized JSON web tokens for user authentication (also for protection of proteted routes/pages). I then established different express routes that would allow me to provide CRUD funtionality to my app. After providing the ability to save/delete generated passwords, save/delete custom passwords, and the ability to update passwords, I then began to connect decorate everything for production.',
+		'I then set up React Router, for navigation, as this was intended to be an single page application. For the login and sign up pages, I utilized JSON web tokens for user authentication (also for protection of proteted routes/pages). I then established different express routes that would allow me to provide CRUD funtionality to my app. After providing the ability to save/delete generated passwords, save/delete custom passwords, and the ability to update passwords, I then began to connect everything for production.',
 		'I hosted my back end, and database all on Railway, as they were one of the few sites who made it very simple. The front end is hosted on Netlify, as their fees for hosting are practically free.',
 	],
 	github: 'https://github.com/seddboi/passwordinator',
@@ -64,19 +65,17 @@ const thtMchne = {
 
 export function Projects() {
 	const { ref: secondRef, inView: isTitleVisible } = useInView();
-	const [open, setOpen] = useState(false);
+
 	const [project, setProject] = useState(pwdntr);
 
-	const handleOpen = (project) => {
-		setProject(project);
-		setOpen(true);
-	};
-
-	const handleClose = () => {
-		setOpen(false);
-	};
-
 	useEffect(() => {
+		// console.log(
+		// 	project.builtDesc.map((paragraph, i) => (
+		// 		<Typography key={i} variant="p" sx={{ color: 'rgb(40, 55, 71)' }}>
+		// 			{paragraph}
+		// 		</Typography>
+		// 	))
+		// );
 		if (isTitleVisible) {
 			document.querySelectorAll('.title-letter').forEach((entry) => {
 				entry.classList.add('title-animation');
@@ -90,7 +89,11 @@ export function Projects() {
 				className="projects-section"
 				disableGutters
 				maxWidth="false"
-				sx={{ height: { xs: '300vh', sm: '380vh', md: '200vw' } }}
+				sx={{
+					height: { xs: '240vh', sm: '200vh', md: '160vw' },
+					display: 'flex',
+					flexDirection: 'column',
+				}}
 			>
 				<Box
 					className="section-title"
@@ -155,221 +158,242 @@ export function Projects() {
 					</Typography>
 				</Box>
 
-				<Box className="project-cards" sx={{ position: 'relative', zIndex: 1 }}>
-					<Stack alignItems="center" spacing={30}>
-						<Card
-							className="project-card"
-							elevation={3}
+				<Box
+					className="sticky-projects"
+					sx={{
+						position: 'sticky',
+						top: { xs: '15vh', sm: '15vh', md: '20vh' },
+						zIndex: 1,
+						backgroundColor: 'rgb(48, 71, 94, 0.7)',
+						height: { xs: '70vh', sm: '70vh', md: '70vh' },
+						width: { xs: '83vw', sm: '83vw', md: '85vw' },
+						alignSelf: 'center',
+						mt: { xs: '15vh', sm: '15vh', md: '25vh' },
+						display: 'flex',
+						flexDirection: { xs: 'column', sm: 'column', md: 'row' },
+					}}
+				>
+					<Container
+						className="sidebar"
+						maxWidth={false}
+						disableGutters
+						sx={{
+							height: { xs: '50px', sm: '50px', md: '100%' },
+							width: { xs: '100%', sm: '100%', md: '150px' },
+							position: 'relative',
+							display: 'flex',
+							flexDirection: { sm: 'row', md: 'column' },
+						}}
+					>
+						<Box
+							className="project-selector"
+							tabIndex={1}
+							onClick={() => {
+								setProject(pwdntr);
+							}}
 							sx={{
-								width: { xs: '85vw', sm: '80vw', md: '70vw' },
-								height: 'auto',
-								backgroundColor: 'var(--lightgrey)',
+								height: { xs: 'auto', sm: 'auto', md: '100%' },
+								width: { xs: '100%', sm: '100%', md: 'auto' },
 								display: 'flex',
-								flexDirection: { xs: 'column', sm: 'column', md: 'row' },
 								justifyContent: 'center',
 								alignItems: 'center',
+								backgroundColor: 'rgb(48, 71, 94)',
+								fontFamily: 'Sharetech',
+								userSelect: 'none',
 							}}
 						>
-							<Box
-								className="carousel-container"
-								sx={{
-									display: 'flex',
-									flexDirection: 'column',
-									justifyContent: 'center',
-									width: { xs: '100%', sm: '100%', md: '60%' },
-									height: 'auto',
-									m: { sm: 0, md: 2 },
-								}}
-							>
-								<Carousel>
-									{pwdntr.images.map((item, i) => (
-										<Box
-											key={i}
-											component="img"
-											sx={{ width: '100%', height: 'auto', borderRadius: '4px' }}
-											alt={item.alt}
-											src={item.path}
-										></Box>
-									))}
-								</Carousel>
-							</Box>
-							<CardContent
-								className="project-message"
-								sx={{
-									width: { xs: '60vw', sm: '60vw', md: '40%' },
-									display: 'flex',
-									flexDirection: 'column',
-									justifyContent: 'center',
-								}}
-							>
-								<Typography variant="h4" sx={{ fontSize: { xs: '9vw', sm: '7vw', md: '4vw' } }}>
-									Passwordinator
-								</Typography>
-								<Typography
-									variant="p"
-									sx={{ fontSize: { xs: '5vw', sm: '3vw', md: '2.5vw' }, fontFamily: 'Sharetech', lineHeight: '1em' }}
-								>
-									A simple password "keychain" for all of your password needs! This is a custom interpretation of Google's
-									passwords page.
-								</Typography>
-								<Box sx={{ mt: 3 }}>
-									<Button
-										size="small"
-										variant="contained"
-										color="secondary"
-										onClick={() => {
-											handleOpen(pwdntr);
-										}}
-									>
-										Learn More ...
-									</Button>
-								</Box>
-							</CardContent>
-						</Card>
+							Passwordinator
+						</Box>
+						<Divider
+							orientation={{ xs: 'vertical', sm: 'vertical', md: 'horizontal' }}
+							sx={{ borderColor: 'var(--white)', borderWidth: '1px' }}
+						/>
+						<Box
+							className="project-selector"
+							tabIndex={1}
+							onClick={() => {
+								setProject(weathered);
+							}}
+							sx={{
+								height: { xs: 'auto', sm: 'auto', md: '100%' },
+								width: { xs: '100%', sm: '100%', md: 'auto' },
+								display: 'flex',
+								justifyContent: 'center',
+								alignItems: 'center',
+								backgroundColor: 'rgb(48, 71, 94)',
+								fontFamily: 'Sharetech',
+								userSelect: 'none',
+							}}
+						>
+							Weathered
+						</Box>
+						<Divider
+							orientation={{ xs: 'vertical', sm: 'vertical', md: 'horizontal' }}
+							sx={{ borderColor: 'var(--white)', borderWidth: '1px' }}
+						/>
+						<Box
+							className="project-selector"
+							tabIndex={1}
+							onClick={() => {
+								setProject(thtMchne);
+							}}
+							sx={{
+								height: { xs: 'auto', sm: 'auto', md: '100%' },
+								width: { xs: '100%', sm: '100%', md: 'auto' },
+								display: 'flex',
+								justifyContent: 'center',
+								alignItems: 'center',
+								backgroundColor: 'rgb(48, 71, 94)',
+								fontFamily: 'Sharetech',
+								userSelect: 'none',
+							}}
+						>
+							Thought Machine
+						</Box>
+					</Container>
 
-						<Card
-							className="project-card"
-							elevation={3}
-							sx={{
-								width: { xs: '85vw', sm: '80vw', md: '70vw' },
-								height: 'auto',
-								backgroundColor: 'var(--lightgrey)',
-								display: 'flex',
-								flexDirection: { xs: 'column-reverse', sm: 'column-reverse', md: 'row' },
-								justifyContent: 'center',
-								alignItems: 'center',
-							}}
-						>
-							<CardContent
-								className="project-message"
+					<Container
+						className="project-content"
+						maxWidth={false}
+						disableGutters
+						sx={{
+							p: { xs: 0, sm: 0, md: 1 },
+							width: '100%',
+							height: '100%',
+							pl: { xs: 3, sm: 3, md: 10 },
+							pr: { xs: 3, sm: 3, md: 10 },
+							backgroundColor: 'var(--white)',
+							overflowY: 'scroll',
+						}}
+					>
+						<Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+							<Typography
+								variant="h4"
 								sx={{
-									width: { xs: '60vw', sm: '60vw', md: '40%' },
-									display: 'flex',
-									flexDirection: 'column',
-									justifyContent: 'center',
+									color: 'var(--mango)',
+									fontSize: { xs: '10vw', sm: '10vw', md: '7vw' },
+									mt: { xs: 2, sm: 2, md: 4 },
+									mb: { xs: 2, sm: 2, md: 4 },
+									userSelect: 'none',
 								}}
 							>
-								<Typography variant="h4" sx={{ fontSize: { xs: '9vw', sm: '7vw', md: '4vw' } }}>
-									Weathered
-								</Typography>
-								<Typography
-									variant="p"
-									sx={{ fontSize: { xs: '5vw', sm: '3vw', md: '2.5vw' }, fontFamily: 'Sharetech', lineHeight: '1em' }}
-								>
-									A basic React Weather Dashboard. Collects and displays all of the necessary forecast information, for hourly and
-									daily weather.
-								</Typography>
-								<Box sx={{ mt: 3 }}>
-									<Button
-										size="small"
-										variant="contained"
-										color="secondary"
-										onClick={() => {
-											handleOpen(weathered);
-										}}
-									>
-										Learn More ...
-									</Button>
-								</Box>
-							</CardContent>
-							<Box
-								className="carousel-container"
-								sx={{
-									display: 'flex',
-									flexDirection: 'column',
-									justifyContent: 'center',
-									width: { xs: '100%', sm: '100%', md: '60%' },
-									height: 'auto',
-									m: { sm: 0, md: 2 },
-								}}
-							>
-								<Carousel>
-									{weathered.images.map((item, i) => (
-										<Box
-											key={i}
-											component="img"
-											sx={{ width: '100%', height: 'auto', borderRadius: '4px' }}
-											alt={item.alt}
-											src={item.path}
-										></Box>
-									))}
-								</Carousel>
-							</Box>
-						</Card>
+								{project.name}
+							</Typography>
 
-						<Card
-							className="project-card"
-							elevation={3}
-							sx={{
-								width: { xs: '85vw', sm: '80vw', md: '70vw' },
-								height: 'auto',
-								backgroundColor: 'var(--lightgrey)',
-								display: 'flex',
-								flexDirection: { xs: 'column', sm: 'column', md: 'row' },
-								justifyContent: 'center',
-								alignItems: 'center',
-							}}
-						>
 							<Box
-								className="carousel-container"
+								className="carousel-and-skills"
 								sx={{
 									display: 'flex',
-									flexDirection: 'column',
-									justifyContent: 'center',
-									width: { xs: '100%', sm: '100%', md: '60%' },
+									flexDirection: { xs: 'column', sm: 'column', md: 'column', lg: 'row' },
+									justifyContent: 'space-around',
+									alignItems: 'center',
+									width: '100%',
 									height: 'auto',
-									m: { sm: 0, md: 2 },
 								}}
 							>
-								<Carousel>
-									{thtMchne.images.map((item, i) => (
-										<Box
-											key={i}
-											component="img"
-											sx={{ width: '100%', height: 'auto', borderRadius: '4px' }}
-											alt={item.alt}
-											src={item.path}
-										></Box>
-									))}
-								</Carousel>
+								<Box
+									className="carousel"
+									sx={{ width: { xs: '290px', sm: '400px', md: '450px', lg: '500px' }, height: 'auto', mb: 4 }}
+								>
+									<Carousel>
+										{project.images.map((item, i) => (
+											<Box
+												key={i}
+												component="img"
+												sx={{ width: '100%', height: 'auto', borderRadius: '4px' }}
+												alt={item.alt}
+												src={item.path}
+											></Box>
+										))}
+									</Carousel>
+								</Box>
+
+								<Box
+									sx={{
+										display: 'flex',
+										flexDirection: 'column',
+										alignItems: 'center',
+										width: { xs: '100%', sm: '100%', md: '55vw', lg: '40%' },
+										ml: { xs: 0, sm: 0, md: 0, lg: 3 },
+									}}
+								>
+									<Typography
+										variant="body1"
+										sx={{ display: 'flex', color: 'rgb(48, 71, 94)', alignSelf: 'start', userSelect: 'none' }}
+									>
+										Tech Used:
+									</Typography>
+									<Grid container columnSpacing={3} rowSpacing={3} className="skill-svgs">
+										{project.skillsUsed.map((svg, i) => (
+											<Grid item lg={6} md={3} sm={4} xs={6} display="flex" justifyContent="center" alignItems="center">
+												<Box
+													className="skill-logo"
+													key={i}
+													sx={{
+														display: 'flex',
+														flexDirection: 'column',
+														alignSelf: 'center',
+														justifyContent: 'center',
+														position: 'relative',
+														width: { xs: '17vw', sm: '14vw', md: '9vw' },
+													}}
+												>
+													<ReactSVG src={svg} />
+												</Box>
+											</Grid>
+										))}
+									</Grid>
+								</Box>
 							</Box>
-							<CardContent
-								className="project-message"
+
+							<Box
 								sx={{
-									width: { xs: '60vw', sm: '60vw', md: '40%' },
 									display: 'flex',
 									flexDirection: 'column',
-									justifyContent: 'center',
+									alignItems: 'center',
+									width: { xs: '100%', sm: '100%', md: '55vw' },
+									mt: 4,
+									mb: 4,
 								}}
 							>
-								<Typography variant="h4" sx={{ fontSize: { xs: '9vw', sm: '6vw', md: '4vw' } }}>
-									Thought Machine
+								<Typography variant="body1" sx={{ color: 'rgb(48, 71, 94)', alignSelf: 'start', userSelect: 'none' }}>
+									Building Process:
 								</Typography>
-								<Typography
-									variant="p"
-									sx={{ fontSize: { xs: '5vw', sm: '3vw', md: '2.5vw' }, fontFamily: 'Sharetech', lineHeight: '1em' }}
-								>
-									A place for all of your "shower thoughts"! Just 15 seconds and they are gone.
-								</Typography>
-								<Box sx={{ mt: 3 }}>
-									<Button
-										size="small"
-										variant="contained"
-										color="secondary"
-										open={open}
-										onClick={() => {
-											handleOpen(thtMchne);
-										}}
-									>
-										Learn More ...
-									</Button>
+
+								<Box sx={{ display: 'flex', flexDirection: 'column', textAlign: 'left', width: '90%' }}>
+									{project.builtDesc.map((paragraph, i) => (
+										<Typography
+											key={i}
+											variant="p"
+											sx={{
+												color: 'rgb(40, 55, 71)',
+												fontFamily: 'Sharetech',
+												textIndent: '20px',
+												textAlign: 'justify',
+												userSelect: 'none',
+											}}
+										>
+											{paragraph}
+										</Typography>
+									))}
 								</Box>
-							</CardContent>
-						</Card>
-					</Stack>
+							</Box>
+
+							<Box
+								className="button-links"
+								sx={{ width: { xs: '100%', sm: '60%', md: '40%' }, display: 'flex', justifyContent: 'space-around', mb: 3 }}
+							>
+								<Button variant="contained" size="small" color="secondary" href={project.github} target="_blank">
+									Github
+								</Button>
+								<Button variant="contained" size="small" color="secondary" href={project.live} target="_blank">
+									Live Site
+								</Button>
+							</Box>
+						</Box>
+					</Container>
 				</Box>
 			</Container>
-			<Popup open={open} handleClose={handleClose} project={project} />
 		</ThemeProvider>
 	);
 }
