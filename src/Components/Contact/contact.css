@@ -1,0 +1,46 @@
+.title-element {
+	color: var(--white);
+	font-family: 'Bronson' !important;
+	line-height: 1em;
+	opacity: 0;
+}
+
+.title-animation {
+	animation: diagonal-in 0.3s cubic-bezier(0.5, 0.95, 0.82, 1.01) forwards;
+}
+
+.contact-me-title .title-animation:nth-child(1) {
+	animation-delay: 100ms;
+}
+
+.contact-me-title .title-animation:nth-child(2) {
+	animation-delay: 200ms;
+}
+
+.contact-me-title .title-animation:nth-child(3) {
+	animation-delay: 300ms;
+}
+
+.contact-me-title .title-animation:nth-child(4) {
+	animation-delay: 400ms;
+}
+
+.contact-me-title .title-animation:nth-child(5) {
+	animation-delay: 500ms;
+}
+
+.contact-me-title .title-animation:nth-child(6) {
+	animation-delay: 600ms;
+}
+
+.contact-me-title .title-animation:nth-child(7) {
+	animation-delay: 700ms;
+}
+
+.contact-me-title .title-animation:nth-child(8) {
+	animation-delay: 800ms;
+}
+
+.contact-me-title .title-animation:nth-child(9) {
+	animation-delay: 900ms;
+}
