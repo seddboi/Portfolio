@@ -7,11 +7,12 @@ import { Skills } from '../Skills/skills';
 import { Projects } from '../Projects/projects';
 import { ReactSVG } from 'react-svg';
 import { Contact } from '../Contact/contact';
+import { Link } from 'react-scroll';
 
 export function HomePage() {
 	const navButtons = [
-		{ name: 'Projects', route: '/projects' },
-		{ name: 'Contact', route: '/contact' },
+		{ name: 'Projects', route: 'projects' },
+		{ name: 'Contact', route: 'contact' },
 	];
 
 	return (
@@ -68,7 +69,9 @@ export function HomePage() {
 											fontSize: { md: '30px', xs: '20px' },
 										}}
 									>
-										{item.name}
+										<Link to={item.route} spy={true} offset={50} duration={500} smooth={true}>
+											{item.name}
+										</Link>
 									</Button>
 								))}
 							</Box>
@@ -88,43 +91,54 @@ export function HomePage() {
 					</Box>
 					<Box
 						className="logo"
-						sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100%' }}
+						sx={{
+							display: 'flex',
+							flexDirection: 'column',
+							justifyContent: 'center',
+							alignItems: 'center',
+							height: '100%',
+							width: '100%',
+						}}
 					>
 						<Box className="firstname" sx={{ display: 'flex', flexDirection: 'row' }}>
-							<Typography id="letter" sx={{ fontSize: { md: '110px', sm: '90px', xs: '55px' } }}>
+							<Typography id="letter" sx={{ userSelect: 'none', fontSize: { md: '110px', sm: '90px', xs: '55px' } }}>
 								G
 							</Typography>
-							<Typography id="letter" sx={{ fontSize: { md: '110px', sm: '90px', xs: '55px' } }}>
+							<Typography id="letter" sx={{ userSelect: 'none', fontSize: { md: '110px', sm: '90px', xs: '55px' } }}>
 								I
 							</Typography>
-							<Typography id="letter" sx={{ fontSize: { md: '110px', sm: '90px', xs: '55px' } }}>
+							<Typography id="letter" sx={{ userSelect: 'none', fontSize: { md: '110px', sm: '90px', xs: '55px' } }}>
 								A
 							</Typography>
-							<Typography id="letter" sx={{ fontSize: { md: '110px', sm: '90px', xs: '55px' } }}>
+							<Typography id="letter" sx={{ userSelect: 'none', fontSize: { md: '110px', sm: '90px', xs: '55px' } }}>
 								N
 							</Typography>
 						</Box>
 						<Box className="lastname" sx={{ display: 'flex', flexDirection: 'row' }}>
-							<Typography id="letter" sx={{ fontSize: { md: '110px', sm: '90px', xs: '55px' } }}>
+							<Typography id="letter" sx={{ userSelect: 'none', fontSize: { md: '110px', sm: '90px', xs: '55px' } }}>
 								Z
 							</Typography>
-							<Typography id="letter" sx={{ fontSize: { md: '110px', sm: '90px', xs: '55px' } }}>
+							<Typography id="letter" sx={{ userSelect: 'none', fontSize: { md: '110px', sm: '90px', xs: '55px' } }}>
 								A
 							</Typography>
-							<Typography id="letter" sx={{ fontSize: { md: '110px', sm: '90px', xs: '55px' } }}>
+							<Typography id="letter" sx={{ userSelect: 'none', fontSize: { md: '110px', sm: '90px', xs: '55px' } }}>
 								M
 							</Typography>
-							<Typography id="letter" sx={{ fontSize: { md: '110px', sm: '90px', xs: '55px' } }}>
+							<Typography id="letter" sx={{ userSelect: 'none', fontSize: { md: '110px', sm: '90px', xs: '55px' } }}>
 								O
 							</Typography>
-							<Typography id="letter" sx={{ fontSize: { md: '110px', sm: '90px', xs: '55px' } }}>
+							<Typography id="letter" sx={{ userSelect: 'none', fontSize: { md: '110px', sm: '90px', xs: '55px' } }}>
 								R
 							</Typography>
-							<Typography id="letter" sx={{ fontSize: { md: '110px', sm: '90px', xs: '55px' } }}>
+							<Typography id="letter" sx={{ userSelect: 'none', fontSize: { md: '110px', sm: '90px', xs: '55px' } }}>
 								A
 							</Typography>
 						</Box>
-						<Typography className="logo-2" variant="h4" sx={{ fontSize: { sm: '50px', xs: '40px' } }}>
+						<Typography
+							className="logo-2"
+							variant="h5"
+							sx={{ userSelect: 'none', fontSize: { md: '50px', sm: '40px', xs: '30px' } }}
+						>
 							Full Stack Web Developer
 						</Typography>
 						<Box sx={{ position: 'absolute', bottom: '1px' }}>

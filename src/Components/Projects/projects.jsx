@@ -86,6 +86,7 @@ export function Projects() {
 		<ThemeProvider theme={theme}>
 			<Container
 				className="projects-section"
+				id="projects"
 				disableGutters
 				maxWidth="false"
 				sx={{

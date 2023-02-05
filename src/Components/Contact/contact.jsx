@@ -19,6 +19,7 @@ export function Contact() {
 		<ThemeProvider theme={theme}>
 			<Container
 				className="contact-me-section"
+				id="contact"
 				maxWidth="false"
 				sx={{ position: 'relative', backgroundColor: 'var(--white)', height: '100vh' }}
 			>
