@@ -66,15 +66,11 @@ export function Projects() {
 	const { ref: secondRef, inView: isTitleVisible } = useInView();
 
 	const [project, setProject] = useState(pwdntr);
+	const [pwdtrClick, setPwdtrClick] = useState(true);
+	const [tmClick, setTMClick] = useState(false);
+	const [wClick, setWClick] = useState(false);
 
 	useEffect(() => {
-		// console.log(
-		// 	project.builtDesc.map((paragraph, i) => (
-		// 		<Typography key={i} variant="p" sx={{ color: 'rgb(40, 55, 71)' }}>
-		// 			{paragraph}
-		// 		</Typography>
-		// 	))
-		// );
 		if (isTitleVisible) {
 			document.querySelectorAll('.title-letter').forEach((entry) => {
 				entry.classList.add('title-animation');
@@ -190,6 +186,9 @@ export function Projects() {
 							tabIndex={1}
 							onClick={() => {
 								setProject(pwdntr);
+								setPwdtrClick(true);
+								setTMClick(false);
+								setWClick(false);
 							}}
 							sx={{
 								height: { xs: 'auto', sm: 'auto', md: '100%' },
@@ -197,7 +196,7 @@ export function Projects() {
 								display: 'flex',
 								justifyContent: 'center',
 								alignItems: 'center',
-								backgroundColor: 'rgb(48, 71, 94)',
+								backgroundColor: pwdtrClick ? 'rgb(40, 55, 71)' : 'rgb(48, 71, 94)',
 								fontFamily: 'Sharetech',
 								userSelect: 'none',
 							}}
@@ -213,6 +212,9 @@ export function Projects() {
 							tabIndex={1}
 							onClick={() => {
 								setProject(weathered);
+								setPwdtrClick(false);
+								setTMClick(false);
+								setWClick(true);
 							}}
 							sx={{
 								height: { xs: 'auto', sm: 'auto', md: '100%' },
@@ -220,7 +222,7 @@ export function Projects() {
 								display: 'flex',
 								justifyContent: 'center',
 								alignItems: 'center',
-								backgroundColor: 'rgb(48, 71, 94)',
+								backgroundColor: wClick ? 'rgb(40, 55, 71)' : 'rgb(48, 71, 94)',
 								fontFamily: 'Sharetech',
 								userSelect: 'none',
 							}}
@@ -236,6 +238,9 @@ export function Projects() {
 							tabIndex={1}
 							onClick={() => {
 								setProject(thtMchne);
+								setPwdtrClick(false);
+								setTMClick(true);
+								setWClick(false);
 							}}
 							sx={{
 								height: { xs: 'auto', sm: 'auto', md: '100%' },
@@ -243,7 +248,7 @@ export function Projects() {
 								display: 'flex',
 								justifyContent: 'center',
 								alignItems: 'center',
-								backgroundColor: 'rgb(48, 71, 94)',
+								backgroundColor: tmClick ? 'rgb(40, 55, 71)' : 'rgb(48, 71, 94)',
 								fontFamily: 'Sharetech',
 								userSelect: 'none',
 							}}
