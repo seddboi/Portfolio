@@ -91,7 +91,7 @@ export function HomePage() {
 						<Box className="bird bird-four"></Box>
 					</Box>
 					<Box
-						className="logo"
+						className="mainlogo"
 						sx={{
 							display: 'flex',
 							flexDirection: 'column',
@@ -136,7 +136,7 @@ export function HomePage() {
 							</Typography>
 						</Box>
 						<Typography
-							className="logo-2"
+							className="mainlogo-2"
 							variant="h5"
 							sx={{ userSelect: 'none', fontSize: { md: '50px', sm: '40px', xs: '30px' } }}
 						>

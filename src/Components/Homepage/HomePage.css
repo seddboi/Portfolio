@@ -86,11 +86,11 @@
 	width: 100vw;
 	min-height: 94vh;
 }
-.logo {
+.mainlogo {
 	position: absolute;
 }
 
-.logo-2 {
+.mainlogo-2 {
 	width: 100%;
 	opacity: 0;
 	animation: fade-in 1s forwards 3.7s;
