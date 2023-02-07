@@ -25,10 +25,10 @@ const pwdntr = {
 	github: 'https://github.com/seddboi/passwordinator',
 	live: 'https://graceful-dango-eb28ce.netlify.app',
 	images: [
-		{ path: './src/images/passwordinator/pic1.png', alt: 'passwordinator landing page' },
-		{ path: './src/images/passwordinator/pic2.png', alt: 'passwordinator home page (post-login)' },
-		{ path: './src/images/passwordinator/pic3.png', alt: 'password save popup' },
-		{ path: './src/images/passwordinator/pic4.png', alt: 'saved passwords page' },
+		{ path: './src/images/pwdtr1.png', alt: 'passwordinator landing page' },
+		{ path: './src/images/pwdtr2.png', alt: 'passwordinator home page (post-login)' },
+		{ path: './src/images/pwdtr3.png', alt: 'password save popup' },
+		{ path: './src/images/pwdtr4.png', alt: 'saved passwords page' },
 	],
 };
 
