@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Container, Box, ThemeProvider, Typography, Button, TextField, InputBase } from '@mui/material';
 import { useInView } from 'react-intersection-observer';
-import { ReactSVG } from 'react-svg';
+import { GithubLogo, LinkedInLogo, ResumeLogo } from '../SVGComponents/svgcomponents';
 import { theme } from '../../App';
 import './contact.css';
 
@@ -164,7 +164,9 @@ export function Contact() {
 								border: 'none',
 							}}
 						>
-							<ReactSVG className="link-logo" src="src/images/github.svg" />
+							<Box className="link-logo">
+								<GithubLogo />
+							</Box>
 						</Button>
 
 						<Button
@@ -183,7 +185,9 @@ export function Contact() {
 								border: 'none',
 							}}
 						>
-							<ReactSVG className="link-logo" src="src/images/linkedin.svg" />
+							<Box className="link-logo">
+								<LinkedInLogo />
+							</Box>
 						</Button>
 
 						<Button
@@ -202,7 +206,9 @@ export function Contact() {
 								border: 'none',
 							}}
 						>
-							<ReactSVG className="link-logo" src="src/images/resume-icon.svg" />
+							<Box className="link-logo">
+								<ResumeLogo />
+							</Box>
 						</Button>
 					</Box>
 				</Box>

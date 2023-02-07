@@ -5,16 +5,19 @@ import { theme } from '../../App';
 import Carousel from 'react-material-ui-carousel';
 import './projects.css';
 import { ReactSVG } from 'react-svg';
+import {
+	CSS3Logo,
+	MySQLLogo,
+	NodeJSLogo,
+	ReactLogo,
+	ReactRouterLogo,
+	JavascriptLogo,
+	ExpressLogoBlack,
+} from '../SVGComponents/svgcomponents';
 
 const pwdntr = {
 	name: 'Passwordinator',
-	skillsUsed: [
-		'src/images/react.svg',
-		'src/images/nodejs.svg',
-		'src/images/mysql.svg',
-		'src/images/express-small.svg',
-		'src/images/react-router.svg',
-	],
+	skillsUsed: [<ReactLogo />, <NodeJSLogo />, <MySQLLogo />, <ExpressLogoBlack />, <ReactRouterLogo />],
 	builtDesc: [
 		'This application started from the base of the old password generator that I created a while ago. It started off as just the password generation page, which I then just turned into a password generation component. From here, I established some new pages, such as the home page, saved passwords page, login page, signup page, and just a basic password generation page for generating passwords.',
 		'I then set up React Router, for navigation, as this was intended to be an single page application. For the login and sign up pages, I utilized JSON web tokens for user authentication (also for protection of protected routes/pages). I then established different express routes that would allow me to provide CRUD funtionality to my app. After providing the ability to save/delete generated passwords, save/delete custom passwords, and the ability to update passwords.',
@@ -32,7 +35,7 @@ const pwdntr = {
 
 const weathered = {
 	name: 'Weathered',
-	skillsUsed: ['src/images/react.svg', 'src/images/nodejs.svg', 'src/images/javascript.svg', 'src/images/css-3.svg'],
+	skillsUsed: [<ReactLogo />, <NodeJSLogo />, <JavascriptLogo />, <CSS3Logo />],
 	builtDesc: [
 		'I began by creating a saved searches bar, to make it easier to track what cities you have searched. This was built using a react state to contain the collection of searches.',
 		'I then established a custom react hook to fetch the information from the FreeWeather API, meanwhile hiding the user keys on a small backend server. Once my data was collected, I then displayed it to the page, to provide all of the readouts you see after each search.',
@@ -49,7 +52,7 @@ const weathered = {
 
 const thtMchne = {
 	name: 'Thought Machine',
-	skillsUsed: ['src/images/react.svg', 'src/images/nodejs.svg', 'src/images/javascript.svg', 'src/images/css-3.svg'],
+	skillsUsed: [<ReactLogo />, <NodeJSLogo />, <JavascriptLogo />, <CSS3Logo />],
 	builtDesc: [
 		'I started with the idea of creating more efficient custom react hooks. To build on that skill, I began with the idea of "shower thoughts" and how they pass right through your mind and disappear forever. So thats what I got started on. I began creating the simple interface that was the search bar, and planned where the thoughts would be displayed after submission. I created a hook that would essentially take in the message being submitted, create a new object with a time key 15 seconds into the future, and an id key. This would allow me to establish a deletion button as well as allow me to set a timeout feature that would automatically delete the messages.',
 		'Along with some simple state declarations, my project was complete; all of the project was done from my own javascript interpretation of native methods and practices I have learned.',
@@ -203,10 +206,7 @@ export function Projects() {
 						>
 							Passwordinator
 						</Box>
-						<Divider
-							orientation={{ xs: 'vertical', sm: 'vertical', md: 'horizontal' }}
-							sx={{ borderColor: 'var(--white)', borderWidth: '1px' }}
-						/>
+
 						<Box
 							className="project-selector"
 							tabIndex={1}
@@ -229,10 +229,7 @@ export function Projects() {
 						>
 							Weathered
 						</Box>
-						<Divider
-							orientation={{ xs: 'vertical', sm: 'vertical', md: 'horizontal' }}
-							sx={{ borderColor: 'var(--white)', borderWidth: '1px' }}
-						/>
+
 						<Box
 							className="project-selector"
 							tabIndex={1}
@@ -275,7 +272,7 @@ export function Projects() {
 							<Typography
 								variant="h4"
 								sx={{
-									color: 'var(--mango)',
+									color: 'var(--darkblue)',
 									fontSize: { xs: '6vw', sm: '6vw', md: '5vw' },
 									mt: { xs: 2, sm: 2, md: 4 },
 									mb: { xs: 2, sm: 2, md: 4 },
@@ -320,6 +317,7 @@ export function Projects() {
 										flexDirection: 'column',
 										alignItems: 'center',
 										width: { xs: '100%', sm: '100%', md: '55vw', lg: '40%' },
+										height: '100%',
 										ml: { xs: 0, sm: 0, md: 0, lg: 3 },
 									}}
 								>
@@ -331,10 +329,9 @@ export function Projects() {
 									</Typography>
 									<Grid container columnSpacing={2} rowSpacing={3} className="skill-svgs">
 										{project.skillsUsed.map((svg, i) => (
-											<Grid item lg={6} md={3} sm={4} xs={6} display="flex" justifyContent="center" alignItems="center">
+											<Grid key={i} item lg={6} md={3} sm={4} xs={6} display="flex" justifyContent="center" alignItems="center">
 												<Box
 													className="skill-logo"
-													key={i}
 													sx={{
 														display: 'flex',
 														flexDirection: 'column',
@@ -344,7 +341,7 @@ export function Projects() {
 														width: { xs: '17vw', sm: '14vw', md: '9vw', lg: '6vw' },
 													}}
 												>
-													<ReactSVG src={svg} />
+													<Box>{svg}</Box>
 												</Box>
 											</Grid>
 										))}

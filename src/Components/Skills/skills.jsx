@@ -2,7 +2,21 @@ import React, { useEffect } from 'react';
 import { Container, Box, Typography, ThemeProvider, Grid } from '@mui/material';
 import { theme } from '../../App';
 import { useInView } from 'react-intersection-observer';
-import { ReactSVG } from 'react-svg';
+import {
+	SecondTransSkills,
+	HTML5Logo,
+	CSS3Logo,
+	ReactLogo,
+	NodeJSLogo,
+	MySQLLogo,
+	ExpressLogo,
+	ReactRouterLogo,
+	PostgreSQLLogo,
+	GithubLogo,
+	GitLogo,
+	ViteLogo,
+	FigmaLogo,
+} from '../SVGComponents/svgcomponents';
 import './skills.css';
 
 export function Skills() {
@@ -21,22 +35,7 @@ export function Skills() {
 			<Box className="skills-main-box" sx={{ position: 'relative', top: 0, backgroundColor: '#30475E' }}>
 				<Container className="skills-container" maxWidth="false" disableGutters sx={{ ml: 0, mr: 0 }}>
 					<Box className="peaks" sx={{ position: 'absolute', zIndex: 0 }}>
-						<svg
-							id="visual"
-							viewBox="0 0 900 500"
-							width="900"
-							height="500"
-							xmlns="http://www.w3.org/2000/svg"
-							xmlnsXlink="http://www.w3.org/1999/xlink"
-							version="1.1"
-						>
-							<path
-								d="M0 160L35 289L69 209L104 412L138 342L173 428L208 422L242 372L277 277L312 418L346 343L381 377L415 193L450 296L485 381L519 288L554 266L588 199L623 366L658 232L692 159L727 256L762 280L796 167L831 359L865 212L900 210L900 0L865 0L831 0L796 0L762 0L727 0L692 0L658 0L623 0L588 0L554 0L519 0L485 0L450 0L415 0L381 0L346 0L312 0L277 0L242 0L208 0L173 0L138 0L104 0L69 0L35 0L0 0Z"
-								fill="#222831"
-								strokeLinecap="square"
-								strokeLinejoin="bevel"
-							></path>
-						</svg>
+						<SecondTransSkills />
 					</Box>
 					<Container
 						disableGutters
@@ -97,6 +96,7 @@ export function Skills() {
 								s
 							</Typography>
 						</Box>
+
 						<Grid
 							container
 							direction="row"
@@ -117,7 +117,9 @@ export function Skills() {
 									}}
 								>
 									<Box sx={{ height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-										<ReactSVG className="logo html5-animate" src="src/images/html.svg" />
+										<Box className="logo">
+											<HTML5Logo />
+										</Box>
 									</Box>
 									<Typography
 										variant="h4"
@@ -140,7 +142,9 @@ export function Skills() {
 									}}
 								>
 									<Box sx={{ height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-										<ReactSVG className="logo css3-animate" src="src/images/css-3.svg" />
+										<Box className="logo">
+											<CSS3Logo />
+										</Box>
 									</Box>
 									<Typography
 										variant="h4"
@@ -163,7 +167,9 @@ export function Skills() {
 									}}
 								>
 									<Box sx={{ height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-										<ReactSVG className="logo react-animate" src="src/images/react.svg" />
+										<Box className="logo">
+											<ReactLogo />
+										</Box>
 									</Box>
 									<Typography
 										variant="h4"
@@ -186,7 +192,9 @@ export function Skills() {
 									}}
 								>
 									<Box sx={{ height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-										<ReactSVG className="logo nodejs-animate" src="src/images/nodejs.svg" />
+										<Box className="logo">
+											<NodeJSLogo />
+										</Box>
 									</Box>
 									<Typography
 										variant="h4"
@@ -209,7 +217,9 @@ export function Skills() {
 									}}
 								>
 									<Box sx={{ height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-										<ReactSVG className="logo mysql-animate" src="src/images/mysql.svg" />
+										<Box className="logo">
+											<MySQLLogo />
+										</Box>
 									</Box>
 									<Typography
 										variant="h4"
@@ -231,8 +241,10 @@ export function Skills() {
 										justifyContent: 'center',
 									}}
 								>
-									<Box sx={{ height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-										<ReactSVG className="logo express-animate" id="size-upgrade" src="src/images/express.svg" />
+									<Box className="logo" sx={{ height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+										<Box className="logo">
+											<ExpressLogo />
+										</Box>
 									</Box>
 									<Typography
 										variant="h4"
@@ -255,7 +267,9 @@ export function Skills() {
 									}}
 								>
 									<Box sx={{ height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-										<ReactSVG className="logo react-router-animate" src="src/images/react-router.svg" />
+										<Box className="logo">
+											<ReactRouterLogo />
+										</Box>
 									</Box>
 									<Typography
 										variant="h4"
@@ -283,7 +297,9 @@ export function Skills() {
 									}}
 								>
 									<Box sx={{ height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-										<ReactSVG className="logo postgresql-animate" src="src/images/postgresql.svg" />
+										<Box className="logo">
+											<PostgreSQLLogo />
+										</Box>
 									</Box>
 									<Typography
 										variant="h4"
@@ -306,7 +322,9 @@ export function Skills() {
 									}}
 								>
 									<Box sx={{ height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-										<ReactSVG className="logo github-animate" src="src/images/github.svg" />
+										<Box className="logo">
+											<GithubLogo />
+										</Box>
 									</Box>
 									<Typography
 										variant="h4"
@@ -329,7 +347,9 @@ export function Skills() {
 									}}
 								>
 									<Box sx={{ height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-										<ReactSVG className="logo git-animate" src="src/images/git.svg" />
+										<Box className="logo">
+											<GitLogo />
+										</Box>
 									</Box>
 									<Typography
 										variant="h4"
@@ -352,7 +372,9 @@ export function Skills() {
 									}}
 								>
 									<Box sx={{ height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-										<ReactSVG className="logo vite-animate" src="src/images/vitejs.svg" />
+										<Box className="logo">
+											<ViteLogo />
+										</Box>
 									</Box>
 									<Typography
 										variant="h4"
@@ -375,7 +397,9 @@ export function Skills() {
 									}}
 								>
 									<Box sx={{ height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-										<ReactSVG className="logo figma-animate" id="figma-downgrade" src="src/images/figma.svg" />
+										<Box className="logo">
+											<FigmaLogo />
+										</Box>
 									</Box>
 									<Typography
 										variant="h4"
