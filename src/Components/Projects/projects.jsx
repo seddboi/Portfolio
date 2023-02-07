@@ -4,7 +4,6 @@ import { useInView } from 'react-intersection-observer';
 import { theme } from '../../App';
 import Carousel from 'react-material-ui-carousel';
 import './projects.css';
-import { ReactSVG } from 'react-svg';
 import {
 	CSS3Logo,
 	MySQLLogo,
@@ -26,10 +25,10 @@ const pwdntr = {
 	github: 'https://github.com/seddboi/passwordinator',
 	live: 'https://graceful-dango-eb28ce.netlify.app',
 	images: [
-		{ path: 'src/images/passwordinator/pic1.png', alt: 'passwordinator landing page' },
-		{ path: 'src/images/passwordinator/pic2.png', alt: 'passwordinator home page (post-login)' },
-		{ path: 'src/images/passwordinator/pic3.png', alt: 'password save popup' },
-		{ path: 'src/images/passwordinator/pic4.png', alt: 'saved passwords page' },
+		{ path: './src/images/passwordinator/pic1.png', alt: 'passwordinator landing page' },
+		{ path: './src/images/passwordinator/pic2.png', alt: 'passwordinator home page (post-login)' },
+		{ path: './src/images/passwordinator/pic3.png', alt: 'password save popup' },
+		{ path: './src/images/passwordinator/pic4.png', alt: 'saved passwords page' },
 	],
 };
 
@@ -97,7 +96,7 @@ export function Projects() {
 				<Box
 					className="section-title"
 					ref={secondRef}
-					sx={{ display: 'flex', flexDirection: 'row', position: 'sticky', top: '20px', ml: 2, mb: 22, zIndex: 2 }}
+					sx={{ display: 'flex', flexDirection: 'row', position: 'sticky', top: '20px', ml: 2, mb: 2, zIndex: 2 }}
 				>
 					<Typography
 						variant="p"
@@ -166,7 +165,6 @@ export function Projects() {
 						height: { xs: '70vh', sm: '70vh', md: '70vh' },
 						width: { xs: '83vw', sm: '83vw', md: '85vw' },
 						alignSelf: 'center',
-						mt: { xs: '15vh', sm: '15vh', md: '25vh' },
 						mb: { xs: '50vh', sm: '45vh', md: '40vh' },
 						display: 'flex',
 						flexDirection: { xs: 'column', sm: 'column', md: 'row' },
