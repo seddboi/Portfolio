@@ -48,11 +48,7 @@ export function Skills() {
 							justifyContent: 'flex-start',
 						}}
 					>
-						<Box
-							className="title-wrapper"
-							ref={myRef}
-							sx={{ display: 'flex', flexDirection: 'row', position: 'sticky', top: '20px', ml: 2, zIndex: 2 }}
-						>
+						<Box className="title-wrapper" ref={myRef} sx={{ display: 'flex', flexDirection: 'row', ml: 2, zIndex: 2 }}>
 							<Typography
 								className="title"
 								variant="p"

@@ -96,7 +96,13 @@ export function Projects() {
 				<Box
 					className="section-title"
 					ref={secondRef}
-					sx={{ display: 'flex', flexDirection: 'row', position: 'sticky', top: '20px', ml: 2, mb: 2, zIndex: 2 }}
+					sx={{
+						display: 'flex',
+						flexDirection: 'row',
+						ml: 2,
+						mb: 2,
+						zIndex: 2,
+					}}
 				>
 					<Typography
 						variant="p"
@@ -159,7 +165,6 @@ export function Projects() {
 				<Box
 					className="sticky-projects"
 					sx={{
-						position: 'sticky',
 						top: { xs: '15vh', sm: '15vh', md: '20vh' },
 						zIndex: 1,
 						height: { xs: '70vh', sm: '70vh', md: '70vh' },

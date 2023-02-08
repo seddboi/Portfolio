@@ -21,12 +21,13 @@ export function Contact() {
 				className="contact-me-section"
 				id="contact"
 				maxWidth="false"
+				disableGutters
 				sx={{ position: 'relative', backgroundColor: 'var(--white)', height: '100vh' }}
 			>
 				<Box
 					className="contact-me-title"
 					ref={contactme}
-					sx={{ display: 'flex', flexDirection: 'row', position: 'sticky', top: '20px', mb: 10, zIndex: 1 }}
+					sx={{ display: 'flex', flexDirection: 'row', mb: 10, zIndex: 1, ml: 2 }}
 				>
 					<Typography
 						variant="p"
@@ -133,7 +134,7 @@ export function Contact() {
 								inputProps={{ style: { color: 'var(--white)' } }}
 								sx={{ mb: 5 }}
 							/>
-							<Button type="submit" variant="contained" size="small" sx={{ width: '13vw' }}>
+							<Button type="submit" variant="contained" color="secondary" size="small" sx={{ width: '13vw' }}>
 								Submit
 							</Button>
 						</Box>
@@ -146,6 +147,7 @@ export function Contact() {
 							width: { xs: '100%', sm: '50%', md: '50%' },
 							justifyContent: 'space-around',
 							alignContent: 'center',
+							mb: 2,
 						}}
 					>
 						<Button
