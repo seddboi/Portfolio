@@ -25,10 +25,10 @@ const pwdntr = {
 	github: 'https://github.com/seddboi/passwordinator',
 	live: 'https://graceful-dango-eb28ce.netlify.app',
 	images: [
-		{ path: '/images/passwordinator/pwdtr1.png', alt: 'passwordinator landing page' },
-		{ path: '/images/passwordinator/pwdtr2.png', alt: 'passwordinator home page (post-login)' },
-		{ path: '/images/passwordinator/pwdtr3.png', alt: 'password save popup' },
-		{ path: '/images/passwordinator/pwdtr4.png', alt: 'saved passwords page' },
+		{ path: '/images/passwordinator/pwdtr1.jpeg', alt: 'passwordinator landing page' },
+		{ path: '/images/passwordinator/pwdtr2.jpeg', alt: 'passwordinator home page (post-login)' },
+		{ path: '/images/passwordinator/pwdtr3.jpeg', alt: 'password save popup' },
+		{ path: '/images/passwordinator/pwdtr4.jpeg', alt: 'saved passwords page' },
 	],
 };
 
@@ -43,9 +43,9 @@ const weathered = {
 	github: 'https://github.com/seddboi/Weathered',
 	live: 'https://clinquant-dieffenbachia-128d9b.netlify.app/',
 	images: [
-		{ path: '/images/weathered/pic1.png', alt: 'weathered landing page' },
-		{ path: '/images/weathered/pic2.png', alt: 'weathered weather forecast page' },
-		{ path: '/images/weathered/pic3.png', alt: 'bottom of forecast page (scroll)' },
+		{ path: '/images/weathered/pic1.jpeg', alt: 'weathered landing page' },
+		{ path: '/images/weathered/pic2.jpeg', alt: 'weathered weather forecast page' },
+		{ path: '/images/weathered/pic3.jpeg', alt: 'bottom of forecast page (scroll)' },
 	],
 };
 
@@ -59,8 +59,8 @@ const thtMchne = {
 	github: 'https://github.com/seddboi/Thought-Machine',
 	live: 'https://seddboi.github.io/Thought-Machine/',
 	images: [
-		{ path: '/images/thoughtMachine/pic1.png', alt: 'thought machine landing page' },
-		{ path: '/images/thoughtMachine/pic2.png', alt: 'thought machine with new submissions' },
+		{ path: '/images/thoughtMachine/pic1.jpeg', alt: 'thought machine landing page' },
+		{ path: '/images/thoughtMachine/pic2.jpeg', alt: 'thought machine with new submissions' },
 	],
 };
 
