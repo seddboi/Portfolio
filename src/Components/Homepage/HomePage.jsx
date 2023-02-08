@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Box, AppBar, Toolbar, Button, Avatar, ThemeProvider, Typography } from '@mui/material';
-import initial from '../../images/initial.png';
+import initial from '/images/initial.png';
 import { theme } from '../../App';
 import './HomePage.css';
 import { Skills } from '../Skills/skills';
