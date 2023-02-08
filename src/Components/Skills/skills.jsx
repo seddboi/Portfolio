@@ -241,8 +241,8 @@ export function Skills() {
 										justifyContent: 'center',
 									}}
 								>
-									<Box className="logo" sx={{ height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-										<Box className="logo">
+									<Box sx={{ height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+										<Box className="logo" id="size-upgrade">
 											<ExpressLogo />
 										</Box>
 									</Box>
@@ -397,7 +397,7 @@ export function Skills() {
 									}}
 								>
 									<Box sx={{ height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-										<Box className="logo">
+										<Box className="logo" id="figma-downgrade">
 											<FigmaLogo />
 										</Box>
 									</Box>

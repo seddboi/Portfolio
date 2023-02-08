@@ -82,11 +82,11 @@
 		width: 11vw;
 	}
 
-	.logo-card {
+	.logo {
 		filter: grayscale(0%);
 	}
 
-	.logo-card:hover {
+	.logo:hover {
 		transform: none;
 	}
 }
