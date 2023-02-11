@@ -32,49 +32,49 @@ export function Contact() {
 					<Typography
 						variant="p"
 						className="title-element"
-						sx={{ userSelect: 'none', fontSize: { xs: '11vw', sm: '9vw', md: '8vw' } }}
+						sx={{ userSelect: 'none', fontSize: { xs: '12.5vw', sm: '11vw', md: '9vw' } }}
 					>
 						C
 					</Typography>
 					<Typography
 						variant="p"
 						className="title-element"
-						sx={{ userSelect: 'none', fontSize: { xs: '11vw', sm: '9vw', md: '8vw' } }}
+						sx={{ userSelect: 'none', fontSize: { xs: '12.5vw', sm: '11vw', md: '9vw' } }}
 					>
 						o
 					</Typography>
 					<Typography
 						variant="p"
 						className="title-element"
-						sx={{ userSelect: 'none', fontSize: { xs: '11vw', sm: '9vw', md: '8vw' } }}
+						sx={{ userSelect: 'none', fontSize: { xs: '12.5vw', sm: '11vw', md: '9vw' } }}
 					>
 						n
 					</Typography>
 					<Typography
 						variant="p"
 						className="title-element"
-						sx={{ userSelect: 'none', fontSize: { xs: '11vw', sm: '9vw', md: '8vw' } }}
+						sx={{ userSelect: 'none', fontSize: { xs: '12.5vw', sm: '11vw', md: '9vw' } }}
 					>
 						t
 					</Typography>
 					<Typography
 						variant="p"
 						className="title-element"
-						sx={{ userSelect: 'none', fontSize: { xs: '11vw', sm: '9vw', md: '8vw' } }}
+						sx={{ userSelect: 'none', fontSize: { xs: '12.5vw', sm: '11vw', md: '9vw' } }}
 					>
 						a
 					</Typography>
 					<Typography
 						variant="p"
 						className="title-element"
-						sx={{ userSelect: 'none', fontSize: { xs: '11vw', sm: '9vw', md: '8vw' } }}
+						sx={{ userSelect: 'none', fontSize: { xs: '12.5vw', sm: '11vw', md: '9vw' } }}
 					>
 						c
 					</Typography>
 					<Typography
 						variant="p"
 						className="title-element"
-						sx={{ userSelect: 'none', fontSize: { xs: '11vw', sm: '9vw', md: '8vw' } }}
+						sx={{ userSelect: 'none', fontSize: { xs: '12.5vw', sm: '11vw', md: '9vw' } }}
 					>
 						t
 					</Typography>

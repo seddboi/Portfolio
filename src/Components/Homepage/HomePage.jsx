@@ -20,13 +20,13 @@ export function HomePage() {
 		<ThemeProvider theme={theme}>
 			<Box
 				sx={{
-					display: 'flex',
-					flexDirection: 'column',
 					pl: 3,
 					pr: 3,
 					height: '150vh',
 					width: 'auto',
 					backgroundColor: 'var(--white)',
+					outlineOffset: 0,
+					position: 'relative',
 				}}
 			>
 				<Container
@@ -39,7 +39,6 @@ export function HomePage() {
 						flexDirection: 'column',
 						alignItems: 'center',
 						mt: 3,
-						mb: '800px',
 						overflow: 'hidden',
 					}}
 				>
@@ -149,7 +148,7 @@ export function HomePage() {
 			</Box>
 
 			<Box className="skills-plot" sx={{ backgroundColor: 'var(--white)' }}>
-				<Box className="peaks" sx={{ zIndex: '-1' }}>
+				<Box className="peaks">
 					<FirstTransSkills />
 				</Box>
 				<Skills />
@@ -159,10 +158,9 @@ export function HomePage() {
 				className="projects-plot"
 				sx={{
 					backgroundColor: '#738FC1',
-					marginTop: { xs: '90vh', sm: '80vh', md: '70vh' },
 				}}
 			>
-				<Box className="top-projects-peaks" sx={{ position: 'absolute', zIndex: 0 }}>
+				<Box className="top-projects-peaks" sx={{ position: 'absolute' }}>
 					<Box className="layered-peaks">
 						<TopPeaksProjects />
 					</Box>
@@ -170,9 +168,9 @@ export function HomePage() {
 				<Projects />
 			</Box>
 
-			<Box sx={{ backgroundColor: '#738FC1', height: '45vh', width: '100%' }}></Box>
+			{/* <Box sx={{ backgroundColor: '#738FC1', height: '45vh', width: '100%' }}></Box> */}
 
-			<Box className="contact-me-plot">
+			<Box className="contact-me-plot" sx={{ backgrounndColor: 'var(--white)' }}>
 				<Box className="top-projects-peaks" sx={{ position: 'absolute', zIndex: 1 }}>
 					<Box className="layered-peaks">
 						<TopPeaksContact />
