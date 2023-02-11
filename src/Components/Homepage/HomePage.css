@@ -18,6 +18,16 @@
 	height: auto;
 }
 
+.about-me-tiles-wrapper {
+	width: 65vw;
+	line-height: 0;
+}
+
+.about-me-tiles-wrapper svg {
+	width: 100%;
+	height: 100%;
+}
+
 .css-17ey7gq-MuiContainer-root {
 	min-width: 100%;
 }
@@ -633,6 +643,10 @@
 }
 
 @media screen and (max-width: 600px) {
+	.about-me-tiles-wrapper {
+		width: 90vw;
+	}
+
 	.homepage {
 		background-size: cover;
 		background-position: center;

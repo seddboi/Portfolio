@@ -6,7 +6,7 @@ import './HomePage.css';
 import { Skills } from '../Skills/skills';
 import { Projects } from '../Projects/projects';
 import { TopPeaksProjects, TopPeaksContact } from '../SVGComponents/svgcomponents';
-import { IntroPointer, FirstTransSkills } from '../SVGComponents/svgcomponents';
+import { AboutMe, IntroPointer, FirstTransSkills } from '../SVGComponents/svgcomponents';
 import { Contact } from '../Contact/contact';
 import { Link } from 'react-scroll';
 
@@ -20,9 +20,9 @@ export function HomePage() {
 		<ThemeProvider theme={theme}>
 			<Box
 				sx={{
+					mb: 10,
 					pl: 3,
 					pr: 3,
-					height: '150vh',
 					width: 'auto',
 					backgroundColor: 'var(--white)',
 					outlineOffset: 0,
@@ -147,6 +147,12 @@ export function HomePage() {
 				</Container>
 			</Box>
 
+			<Box className="about-me-plot" sx={{ display: 'flex', justifyContent: 'center' }}>
+				<Box className="about-me-tiles-wrapper" sx={{ mt: 22, mb: 14 }}>
+					<AboutMe />
+				</Box>
+			</Box>
+
 			<Box className="skills-plot" sx={{ backgroundColor: 'var(--white)' }}>
 				<Box className="peaks">
 					<FirstTransSkills />
@@ -167,8 +173,6 @@ export function HomePage() {
 				</Box>
 				<Projects />
 			</Box>
-
-			{/* <Box sx={{ backgroundColor: '#738FC1', height: '45vh', width: '100%' }}></Box> */}
 
 			<Box className="contact-me-plot" sx={{ backgrounndColor: 'var(--white)' }}>
 				<Box className="top-projects-peaks" sx={{ position: 'absolute', zIndex: 1 }}>
