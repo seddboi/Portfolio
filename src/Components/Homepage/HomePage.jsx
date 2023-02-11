@@ -38,10 +38,8 @@ export function HomePage() {
 						display: 'flex',
 						flexDirection: 'column',
 						alignItems: 'center',
-						width: '100%',
 						mt: 3,
 						mb: '800px',
-						borderRadius: '15px',
 						overflow: 'hidden',
 					}}
 				>
