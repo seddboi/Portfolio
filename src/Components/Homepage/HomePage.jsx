@@ -58,14 +58,15 @@ export function HomePage() {
 									<Button
 										key={index}
 										className="font-link"
-										color="primary"
-										variant="outlined"
+										color="secondary"
+										variant="contained"
+										size="small"
 										sx={{
 											color: '#ffffff',
 											margin: '5px',
-											maxHeight: '42px',
+											maxHeight: { md: '45px', sm: '35px', xs: '30px' },
 											borderRadius: '10px',
-											fontSize: { md: '30px', xs: '20px' },
+											fontSize: { md: '30px', sm: '25px', xs: '20px' },
 										}}
 									>
 										<Link to={item.route} spy={true} offset={50} duration={500} smooth={true}>
