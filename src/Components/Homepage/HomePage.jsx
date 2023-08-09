@@ -3,10 +3,11 @@ import { Container, Box, AppBar, Toolbar, Button, Avatar, ThemeProvider, Typogra
 import initial from '/images/initial.png';
 import { theme } from '../../App';
 import './HomePage.css';
+import { AboutMe } from '../AboutMe/aboutme';
 import { Skills } from '../Skills/skills';
 import { Projects } from '../Projects/projects';
 import { TopPeaksProjects, TopPeaksContact } from '../SVGComponents/svgcomponents';
-import { AboutMe, IntroPointer, FirstTransSkills } from '../SVGComponents/svgcomponents';
+import { IntroPointer, FirstTransSkills } from '../SVGComponents/svgcomponents';
 import { Contact } from '../Contact/contact';
 import { Link } from 'react-scroll';
 
@@ -20,7 +21,7 @@ export function HomePage() {
 		<ThemeProvider theme={theme}>
 			<Box
 				sx={{
-					mb: 10,
+					mb: { md: '500px', sm: '350px', xs: '200px' },
 					pl: 3,
 					pr: 3,
 					width: 'auto',
@@ -147,10 +148,8 @@ export function HomePage() {
 				</Container>
 			</Box>
 
-			<Box className="about-me-plot" sx={{ display: 'flex', justifyContent: 'center' }}>
-				<Box className="about-me-tiles-wrapper" sx={{ mt: 22, mb: 14 }}>
-					<AboutMe />
-				</Box>
+			<Box className="about-me-plot" sx={{}}>
+				<AboutMe />
 			</Box>
 
 			<Box className="skills-plot" sx={{ backgroundColor: 'var(--white)' }}>
