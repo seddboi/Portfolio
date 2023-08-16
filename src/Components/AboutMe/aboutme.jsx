@@ -1,6 +1,7 @@
 import React from 'react';
 import { ThemeProvider, Box, Typography, Avatar, Grid } from '@mui/material';
 import { ReactLogo, NodeJSLogo, PostgreSQLLogo, PythonLogo, JavascriptLogo } from '../SVGComponents/svgcomponents';
+import PicofMe from './me_pic.jpeg';
 import './aboutme.css';
 import { theme } from '../../App';
 
@@ -32,7 +33,7 @@ export function AboutMe() {
 						<Box sx={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
 							<Avatar
 								alt="Gian Zamora"
-								src="src/Components/AboutMe/me_pic.jpeg"
+								src={PicofMe}
 								sx={{
 									height: { sm: '270px', xs: '250px' },
 									width: { sm: '270px', xs: '250px' },
