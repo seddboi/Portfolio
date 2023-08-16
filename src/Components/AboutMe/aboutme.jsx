@@ -1,5 +1,6 @@
 import React from 'react';
-import { ThemeProvider, Box, Typography } from '@mui/material';
+import { ThemeProvider, Box, Typography, Avatar, Grid } from '@mui/material';
+import { ReactLogo, NodeJSLogo, PostgreSQLLogo, PythonLogo, JavascriptLogo } from '../SVGComponents/svgcomponents';
 import './aboutme.css';
 import { theme } from '../../App';
 
@@ -8,30 +9,113 @@ export function AboutMe() {
 		<ThemeProvider theme={theme}>
 			<Box
 				sx={{
-					backgroundColor: 'var(--darkblue)',
-					display: 'flex',
-					justifyContent: 'center',
-					flexDirection: 'column',
-					textAlign: { sm: 'justify', xs: 'left' },
-					lineHeight: '1.2',
-					mb: 15,
-					ml: 3,
-					mr: 4,
-					p: { sm: 4, xs: 2 },
-					boxShadow: '5px 5px #3E434B, 10px 10px #595E65',
+					color: 'var(--darkblue)',
+					textAlign: 'justify',
+					lineHeight: { xs: '1.1' },
+					margin: '0 auto',
 				}}
 			>
-				<Typography variant="body" sx={{ fontSize: { md: '35px', sm: '25px', xs: '25px' } }}>
-					Hello there!
-				</Typography>
-				<Typography>&nbsp;</Typography>
-				<Typography variant="body" paragraph="true" sx={{ textIndent: '20px', fontSize: { md: '35px', sm: '25px', xs: '25px' } }}>
-					I am a Full Stack Web Developer with a degree in Computer Science and a Certificate in Web Development from the
-					University of California, Riverside. With extensive experience in management and participation in various open-source
-					projects, I am determined to employ skills like problem solving, being a self starter, and being a team player. My
-					current expertise focuses around Javascript, React, Express, Node, SQL and Python, rounding me out to be a perfect
-					inclusion to any company.
-				</Typography>
+				<Box
+					sx={{
+						maxWidth: '1000px',
+						display: 'flex',
+						justifyContent: 'space-around',
+						alignItems: 'center',
+						flexDirection: { md: 'row', sm: 'column', xs: 'column' },
+						margin: '0 auto',
+					}}
+				>
+					<Box
+						className="avatar-and-skills"
+						sx={{ width: '300px', display: 'flex', justifyContent: 'center', flexDirection: 'column' }}
+					>
+						<Box sx={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
+							<Avatar
+								alt="Gian Zamora"
+								src="src/Components/AboutMe/me_pic.jpeg"
+								sx={{
+									height: { sm: '270px', xs: '250px' },
+									width: { sm: '270px', xs: '250px' },
+									mb: { sm: 2, xs: 4 },
+								}}
+							/>
+						</Box>
+
+						<Grid
+							container
+							justifyContent="center"
+							columnSpacing={1}
+							columns={5}
+							wrap="no-wrap"
+							sx={{ width: '100%', mb: { sm: 0, xs: 2 } }}
+						>
+							<Grid item sx={2}>
+								<Box
+									sx={{
+										height: '50px',
+										width: '50px',
+										display: 'flex',
+										justifyContent: 'center',
+										alignItems: 'center',
+									}}
+								>
+									<Box className="logo">
+										<ReactLogo />
+									</Box>
+								</Box>
+							</Grid>
+
+							<Grid item sx={2}>
+								<Box sx={{ height: '50px', width: '50px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+									<Box className="logo">
+										<NodeJSLogo />
+									</Box>
+								</Box>
+							</Grid>
+
+							<Grid item sx={2}>
+								<Box sx={{ height: '50px', width: '50px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+									<Box className="logo">
+										<PostgreSQLLogo />
+									</Box>
+								</Box>
+							</Grid>
+
+							<Grid item sx={2}>
+								<Box sx={{ height: '50px', width: '50px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+									<Box className="logo">
+										<JavascriptLogo />
+									</Box>
+								</Box>
+							</Grid>
+
+							<Grid item sx={2}>
+								<Box sx={{ height: '50px', width: '50px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+									<Box className="logo">
+										<PythonLogo />
+									</Box>
+								</Box>
+							</Grid>
+						</Grid>
+					</Box>
+
+					<Box sx={{ maxWidth: '400px', minWidth: '250px', m: { sm: 0, xs: 2 } }}>
+						<Typography variant="body" sx={{ fontSize: { md: '27px', sm: '22px', xs: '18px' } }}>
+							Hello there!
+						</Typography>
+						<Typography
+							variant="body"
+							paragraph="true"
+							sx={{ textIndent: { md: '50px', xs: '25px' }, fontSize: { md: '27px', sm: '22px', xs: '18px' } }}
+						>
+							I am a Full Stack Software Engineer with a degree in Applied Mathematics and a Certificate in Web Development from
+							the University of California, Riverside. With extensive experience in management, advanced mathematics, and
+							participation in various open-source projects, I am determined to employ skills like problem solving, being a self
+							starter, and being a team player. My current expertise focuses around React, Node, SQL and Python, rounding me out
+							to be a perfect inclusion to any company.
+						</Typography>
+					</Box>
+				</Box>
 			</Box>
 		</ThemeProvider>
 	);

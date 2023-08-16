@@ -47,18 +47,18 @@
 }
 
 .logo {
-	transition: all 0.1s ease-in-out;
+	/* transition: all 0.1s ease-in-out;
 	-webkit-transition: all 0.1s ease-in-out;
-	filter: grayscale(100%);
+	filter: grayscale(100%); */
 	width: 100px;
 	position: relative;
 }
 
-.logo:hover {
+/* .logo:hover {
 	transform: scale(1.3);
 	-webkit-transform: scale(1.3);
 	filter: grayscale(0%);
-}
+} */
 
 #size-upgrade {
 	width: 120px;
@@ -113,10 +113,12 @@
 	}
 
 	.logo {
+		-webkit-filter: grayscale(0%);
 		filter: grayscale(0%);
 	}
 
 	.logo:hover {
+		-ms-transform: none;
 		transform: none;
 		-webkit-transform: none;
 	}
