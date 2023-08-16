@@ -4,10 +4,8 @@ import initial from '/images/initial.png';
 import { theme } from '../../App';
 import './HomePage.css';
 import { AboutMe } from '../AboutMe/aboutme';
-import { Skills } from '../Skills/skills';
 import { Projects } from '../Projects/projects';
-import { TopPeaksProjects, TopPeaksContact } from '../SVGComponents/svgcomponents';
-import { IntroPointer, FirstTransSkills } from '../SVGComponents/svgcomponents';
+import { IntroPointer } from '../SVGComponents/svgcomponents';
 import { Contact } from '../Contact/contact';
 import { Link } from 'react-scroll';
 
@@ -139,7 +137,7 @@ export function HomePage() {
 							variant="h5"
 							sx={{ userSelect: 'none', fontSize: { md: '50px', sm: '40px', xs: '30px' } }}
 						>
-							Full Stack Web Developer
+							Full Stack Software Engineer
 						</Typography>
 						<Box sx={{ position: 'absolute', bottom: '1px' }}>
 							<IntroPointer />
@@ -152,33 +150,16 @@ export function HomePage() {
 				<AboutMe />
 			</Box>
 
-			<Box className="skills-plot" sx={{ backgroundColor: 'var(--white)' }}>
-				<Box className="peaks">
-					<FirstTransSkills />
-				</Box>
-				<Skills />
-			</Box>
-
 			<Box
 				className="projects-plot"
 				sx={{
-					backgroundColor: '#738FC1',
+					backgroundColor: 'var(--white)',
 				}}
 			>
-				<Box className="top-projects-peaks" sx={{ position: 'absolute' }}>
-					<Box className="layered-peaks">
-						<TopPeaksProjects />
-					</Box>
-				</Box>
 				<Projects />
 			</Box>
 
 			<Box className="contact-me-plot" sx={{ backgrounndColor: 'var(--white)' }}>
-				<Box className="top-projects-peaks" sx={{ position: 'absolute', zIndex: 1 }}>
-					<Box className="layered-peaks">
-						<TopPeaksContact />
-					</Box>
-				</Box>
 				<Contact />
 			</Box>
 		</ThemeProvider>

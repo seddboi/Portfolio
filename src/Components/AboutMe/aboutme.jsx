@@ -14,6 +14,7 @@ export function AboutMe() {
 					textAlign: 'justify',
 					lineHeight: { xs: '1.1' },
 					margin: '0 auto',
+					mb: '400px',
 				}}
 			>
 				<Box
@@ -37,19 +38,12 @@ export function AboutMe() {
 								sx={{
 									height: { sm: '270px', xs: '250px' },
 									width: { sm: '270px', xs: '250px' },
-									mb: { sm: 2, xs: 4 },
+									mb: 4,
 								}}
 							/>
 						</Box>
 
-						<Grid
-							container
-							justifyContent="center"
-							columnSpacing={1}
-							columns={5}
-							wrap="no-wrap"
-							sx={{ width: '100%', mb: { sm: 0, xs: 2 } }}
-						>
+						<Grid container justifyContent="center" columnSpacing={1} columns={5} wrap="no-wrap" sx={{ width: '100%', mb: 2 }}>
 							<Grid item sx={2}>
 								<Box
 									sx={{
