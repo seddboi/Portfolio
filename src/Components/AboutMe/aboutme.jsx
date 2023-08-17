@@ -43,8 +43,8 @@ export function AboutMe() {
 							/>
 						</Box>
 
-						<Grid container justifyContent="center" columnSpacing={1} columns={5} wrap="no-wrap" sx={{ width: '100%', mb: 2 }}>
-							<Grid item sx={2}>
+						<Grid container justifyContent="center" columnSpacing={1} columns={5} sx={{ width: '100%', mb: 2 }}>
+							<Grid item>
 								<Box
 									sx={{
 										height: '50px',
@@ -60,7 +60,7 @@ export function AboutMe() {
 								</Box>
 							</Grid>
 
-							<Grid item sx={2}>
+							<Grid item>
 								<Box sx={{ height: '50px', width: '50px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
 									<Box className="logo">
 										<NodeJSLogo />
@@ -68,7 +68,7 @@ export function AboutMe() {
 								</Box>
 							</Grid>
 
-							<Grid item sx={2}>
+							<Grid item>
 								<Box sx={{ height: '50px', width: '50px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
 									<Box className="logo">
 										<PostgreSQLLogo />
@@ -76,7 +76,7 @@ export function AboutMe() {
 								</Box>
 							</Grid>
 
-							<Grid item sx={2}>
+							<Grid item>
 								<Box sx={{ height: '50px', width: '50px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
 									<Box className="logo">
 										<JavascriptLogo />
@@ -84,7 +84,7 @@ export function AboutMe() {
 								</Box>
 							</Grid>
 
-							<Grid item sx={2}>
+							<Grid item>
 								<Box sx={{ height: '50px', width: '50px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
 									<Box className="logo">
 										<PythonLogo />
@@ -100,7 +100,7 @@ export function AboutMe() {
 						</Typography>
 						<Typography
 							variant="body"
-							paragraph="true"
+							paragraph={true}
 							sx={{ textIndent: { md: '50px', xs: '25px' }, fontSize: { md: '27px', sm: '22px', xs: '18px' } }}
 						>
 							I am a Full Stack Software Engineer with a degree in Applied Mathematics and a Certificate in Web Development from
