@@ -6,15 +6,8 @@ import { theme } from '../../App';
 import './contact.css';
 
 export function Contact() {
-	const { ref: contactme, inView: isContactTitleVisible } = useInView();
+	// const { ref: contactme, inView: isContactTitleVisible } = useInView();
 
-	useEffect(() => {
-		if (isContactTitleVisible) {
-			document.querySelectorAll('.title-element').forEach((entry) => {
-				entry.classList.add('title-animation');
-			});
-		}
-	}, [isContactTitleVisible]);
 	return (
 		<ThemeProvider theme={theme}>
 			<Container
@@ -22,66 +15,23 @@ export function Contact() {
 				id="contact"
 				maxWidth="false"
 				disableGutters
-				sx={{ position: 'relative', backgroundColor: 'var(--white)', height: '100vh' }}
+				sx={{
+					position: 'relative',
+					backgroundColor: 'var(--white)',
+					height: '100vh',
+				}}
 			>
-				<Box
-					className="contact-me-title"
-					ref={contactme}
-					sx={{ display: 'flex', flexDirection: 'row', mb: 10, zIndex: 1, ml: 2 }}
+				<Typography
+					className="section-title"
+					sx={{ userSelect: 'none', fontSize: { xs: '25px', sm: '25px', md: '30px' }, pl: '20px', zIndex: 0 }}
 				>
-					<Typography
-						variant="p"
-						className="title-element"
-						sx={{ userSelect: 'none', fontSize: { xs: '12.5vw', sm: '11vw', md: '9vw' } }}
-					>
-						C
-					</Typography>
-					<Typography
-						variant="p"
-						className="title-element"
-						sx={{ userSelect: 'none', fontSize: { xs: '12.5vw', sm: '11vw', md: '9vw' } }}
-					>
-						o
-					</Typography>
-					<Typography
-						variant="p"
-						className="title-element"
-						sx={{ userSelect: 'none', fontSize: { xs: '12.5vw', sm: '11vw', md: '9vw' } }}
-					>
-						n
-					</Typography>
-					<Typography
-						variant="p"
-						className="title-element"
-						sx={{ userSelect: 'none', fontSize: { xs: '12.5vw', sm: '11vw', md: '9vw' } }}
-					>
-						t
-					</Typography>
-					<Typography
-						variant="p"
-						className="title-element"
-						sx={{ userSelect: 'none', fontSize: { xs: '12.5vw', sm: '11vw', md: '9vw' } }}
-					>
-						a
-					</Typography>
-					<Typography
-						variant="p"
-						className="title-element"
-						sx={{ userSelect: 'none', fontSize: { xs: '12.5vw', sm: '11vw', md: '9vw' } }}
-					>
-						c
-					</Typography>
-					<Typography
-						variant="p"
-						className="title-element"
-						sx={{ userSelect: 'none', fontSize: { xs: '12.5vw', sm: '11vw', md: '9vw' } }}
-					>
-						t
-					</Typography>
-				</Box>
+					Contact Me
+				</Typography>
+				{/* <Box sx={{ height: '100%', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}> */}
 				<Box
 					className="contact-info-form"
 					sx={{
+						height: '100%',
 						position: 'relative',
 						display: 'flex',
 						justifyContent: 'center',
@@ -90,20 +40,19 @@ export function Contact() {
 						zIndex: 2,
 					}}
 				>
-					<Box className="contact-form">
+					<Box className="contact-form" sx={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
 						<Box
 							component="form"
 							action="https://formsubmit.co/e791774e6d0e5034a0811b324b9a8348"
 							method="POST"
 							sx={{
-								backgroundColor: 'rgb(33, 47, 60, 0.3)',
 								display: 'flex',
 								flexDirection: 'column',
 								justifyContent: 'center',
 								alignItems: 'center',
 								p: 5,
 								mb: 5,
-								width: '60vw',
+								width: '400px',
 								height: '55vh',
 							}}
 						>
@@ -113,7 +62,7 @@ export function Contact() {
 								size="small"
 								name="name"
 								fullWidth
-								sx={{ mb: 5, input: { color: 'var(--white)' } }}
+								sx={{ mb: 5, input: { color: 'var(--darkblue)' } }}
 							/>
 							<TextField
 								variant="outlined"
@@ -121,7 +70,7 @@ export function Contact() {
 								size="small"
 								name="email"
 								fullWidth
-								sx={{ mb: 5, input: { color: 'var(--white)' } }}
+								sx={{ mb: 5, input: { color: 'var(--darkblue)' } }}
 							/>
 							<TextField
 								variant="outlined"
@@ -131,22 +80,24 @@ export function Contact() {
 								multiline
 								rows={3}
 								fullWidth
-								inputProps={{ style: { color: 'var(--white)' } }}
+								inputProps={{ style: { color: 'var(--darkblue)' } }}
 								sx={{ mb: 5 }}
 							/>
-							<Button type="submit" variant="contained" color="secondary" size="small" sx={{ width: '13vw' }}>
+							<Button type="submit" variant="text" color="secondary" size="small" sx={{}}>
 								Submit
 							</Button>
 						</Box>
 					</Box>
+
 					<Box
 						className="links"
 						sx={{
 							display: 'flex',
 							flexDirection: 'row',
-							width: { xs: '100%', sm: '50%', md: '50%' },
-							justifyContent: 'space-around',
+							width: '100%',
+							justifyContent: 'space-evenly',
 							alignContent: 'center',
+							maxWidth: '480px',
 							mb: 2,
 						}}
 					>
@@ -201,7 +152,7 @@ export function Contact() {
 								flexDirection: 'column',
 								alignSelf: 'center',
 								justifyContent: 'center',
-								width: { xs: '15vw', sm: '13vw', md: '7vw' },
+								width: { xs: '13vw', sm: '10vw', md: '5vw' },
 								position: 'relative',
 								background: 'transparent',
 								p: 0,
@@ -214,6 +165,7 @@ export function Contact() {
 						</Button>
 					</Box>
 				</Box>
+				{/* </Box> */}
 			</Container>
 		</ThemeProvider>
 	);
