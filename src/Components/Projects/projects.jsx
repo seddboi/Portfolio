@@ -60,7 +60,7 @@ export function Projects() {
 
 	return (
 		<ThemeProvider theme={theme}>
-			<Container className="projects-section" disableGutters maxWidth="false" sx={{}}>
+			<Container className="projects-section" id="projects" disableGutters maxWidth="false" sx={{}}>
 				<Typography
 					className="section-title"
 					sx={{ userSelect: 'none', fontSize: { xs: '25px', sm: '25px', md: '30px' }, pl: '20px', zIndex: 0 }}
