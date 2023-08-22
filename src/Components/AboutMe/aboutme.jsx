@@ -25,7 +25,6 @@ export function AboutMe() {
 						alignItems: 'center',
 						flexDirection: { md: 'row', sm: 'column', xs: 'column' },
 						margin: '0 auto',
-						// height: '100vh',
 					}}
 				>
 					<Box
@@ -105,10 +104,10 @@ export function AboutMe() {
 							sx={{ textIndent: { md: '50px', xs: '25px' }, fontSize: { md: '27px', sm: '22px', xs: '18px' } }}
 						>
 							I am a Full Stack Software Engineer with a degree in Applied Mathematics and a Certificate in Web Development from
-							the University of California, Riverside. With extensive experience in management, advanced mathematics, and
-							participation in various open-source projects, I am determined to employ skills like problem solving, being a self
-							starter, and being a team player. My current expertise focuses around React, Node, SQL and Python, rounding me out
-							to be a perfect inclusion to any company.
+							the University of California, Riverside. With extensive experience in advanced mathematics and participation in
+							various open-source projects, I am determined to employ skills like problem solving, being a self starter, and being
+							a team player. My current expertise focuses around React, Node, SQL and Python, rounding me out to be a perfect
+							inclusion to any company.
 						</Typography>
 					</Box>
 				</Box>
