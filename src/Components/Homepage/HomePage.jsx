@@ -19,7 +19,7 @@ export function HomePage() {
 		<ThemeProvider theme={theme}>
 			<Box
 				sx={{
-					mb: '200px',
+					mb: '300px',
 					pl: 3,
 					pr: 3,
 					width: 'auto',

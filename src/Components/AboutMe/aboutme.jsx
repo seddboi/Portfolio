@@ -14,7 +14,7 @@ export function AboutMe() {
 					textAlign: 'justify',
 					lineHeight: { xs: '1.1' },
 					margin: '0 auto',
-					mb: '200px',
+					mb: '300px',
 				}}
 			>
 				<Box
