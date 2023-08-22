@@ -5,3 +5,8 @@
 	--mediumblue: #30475e;
 	--darkblue: #222831;
 }
+
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
