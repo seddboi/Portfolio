@@ -63,7 +63,7 @@ export function Projects() {
 			<Container className="projects-section" disableGutters maxWidth="false" sx={{}}>
 				<Typography
 					className="section-title"
-					sx={{ userSelect: 'none', fontSize: { xs: '30px', sm: '40px', md: '30px' }, pl: '20px', zIndex: 0 }}
+					sx={{ userSelect: 'none', fontSize: { xs: '25px', sm: '25px', md: '30px' }, pl: '20px', zIndex: 0 }}
 				>
 					Projects
 				</Typography>
@@ -73,7 +73,7 @@ export function Projects() {
 					disableGutters
 					maxWidth="fixed"
 					sx={{
-						height: { md: '2300px' },
+						height: '2300px',
 						position: 'relative',
 						display: 'flex',
 						zIndex: 1,
