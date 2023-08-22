@@ -57,7 +57,7 @@ export function HomePage() {
 										key={index}
 										className="font-link"
 										color="secondary"
-										variant="contained"
+										variant="text"
 										size="small"
 										sx={{
 											color: '#ffffff',
@@ -135,7 +135,7 @@ export function HomePage() {
 						<Typography
 							className="mainlogo-2"
 							variant="h5"
-							sx={{ userSelect: 'none', fontSize: { md: '50px', sm: '40px', xs: '30px' }, textAlign: 'center' }}
+							sx={{ userSelect: 'none', fontSize: { md: '50px', sm: '40px', xs: '25px' }, textAlign: 'center' }}
 						>
 							Full Stack Software Engineer
 						</Typography>
