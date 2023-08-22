@@ -14,7 +14,7 @@ export function AboutMe() {
 					textAlign: 'justify',
 					lineHeight: { xs: '1.1' },
 					margin: '0 auto',
-					mb: '400px',
+					mb: '200px',
 				}}
 			>
 				<Box
@@ -25,6 +25,7 @@ export function AboutMe() {
 						alignItems: 'center',
 						flexDirection: { md: 'row', sm: 'column', xs: 'column' },
 						margin: '0 auto',
+						// height: '100vh',
 					}}
 				>
 					<Box

@@ -27,7 +27,6 @@ export function Contact() {
 				>
 					Contact Me
 				</Typography>
-				{/* <Box sx={{ height: '100%', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}> */}
 				<Box
 					className="contact-info-form"
 					sx={{
@@ -165,7 +164,6 @@ export function Contact() {
 						</Button>
 					</Box>
 				</Box>
-				{/* </Box> */}
 			</Container>
 		</ThemeProvider>
 	);
