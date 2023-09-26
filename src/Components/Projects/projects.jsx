@@ -43,7 +43,7 @@ const weathered = {
 	skillsUsed: [<ReactLogo />, <NodeJSLogo />, <JavascriptLogo />, <CSS3Logo />],
 	description:
 		'React Weatherboard the provides all of the essentials of daily and forecasted weather. From rain to wind to hail, it has it all!',
-	github: 'https://github.com/seddboi/Weathered',
+	github: 'https://github.com/seddboi/Weatheredv2',
 	video: { path: '/videos/weathered.mov', alt: 'Weathered Dashboard App' },
 };
 
