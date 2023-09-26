@@ -22,7 +22,7 @@ const pwdntr = {
 	skillsUsed: [<ReactLogo />, <NodeJSLogo />, <PostgreSQLLogo />, <ExpressLogoBlack />, <ReactRouterLogo />],
 	description:
 		'A Google Chrome Password Duplicate application meant to securely create and hold any sensitive password information. Simply create a user account, and start saving away!',
-	github: 'https://github.com/seddboi/passwordinator',
+	github: 'https://github.com/seddboi/pwdntr-client',
 	video: {
 		path: './videos/passwordinator.mov',
 		alt: 'Passwordinator Web Application',
