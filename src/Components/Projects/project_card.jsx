@@ -53,6 +53,7 @@ export function ProjectCard({ project }) {
 							autoPlay
 							loop
 							muted
+							playsInline
 							sx={{ width: '100%', height: '100%', objectFit: 'fill' }}
 						/>
 						<Box
