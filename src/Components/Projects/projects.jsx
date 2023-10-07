@@ -15,6 +15,8 @@ import {
 	ExpressLogoBlack,
 	PostgreSQLLogo,
 	PythonLogo,
+	ExpressLogo,
+	TailwindLogo,
 } from '../SVGComponents/svgcomponents';
 
 const pwdntr = {
@@ -47,6 +49,15 @@ const weathered = {
 	video: { path: '/videos/weathered.mov', alt: 'Weathered Dashboard App' },
 };
 
+const mbd = {
+	name: "Monchi's World",
+	skillsUsed: [<ReactLogo />, <NodeJSLogo />, <ExpressLogoBlack />, <TailwindLogo />],
+	description:
+		"Full-Stack application showcasing my girlfriend's accomplishments and attributes. Created as a birthday present for a wonderful woman.",
+	github: 'https://github.com/seddboi/Monchis-Home',
+	video: { path: '/videos/mbd.mov', alt: "Monchi's World: My Girlfriend's Birthday Application" },
+};
+
 export function Projects() {
 	// const { ref: secondRef, inView: isTitleVisible } = useInView();
 
@@ -73,7 +84,7 @@ export function Projects() {
 					disableGutters
 					maxWidth="fixed"
 					sx={{
-						height: '2300px',
+						height: '3100px',
 						position: 'relative',
 						display: 'flex',
 						zIndex: 1,
@@ -91,6 +102,7 @@ export function Projects() {
 					>
 						<ProjectCard project={pwdntr} />
 						<ProjectCard project={blackjack} />
+						<ProjectCard project={mbd} />
 						<ProjectCard project={weathered} />
 					</Box>
 				</Container>
