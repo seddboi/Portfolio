@@ -103,11 +103,11 @@ export function AboutMe() {
 							paragraph={true}
 							sx={{ textIndent: { md: '50px', xs: '25px' }, fontSize: { md: '27px', sm: '22px', xs: '18px' } }}
 						>
-							I am a Full Stack Software Engineer with a degree in Applied Mathematics and a Certificate in Web Development from
-							the University of California, Riverside. With extensive experience in advanced mathematics and participation in
-							various open-source projects, I am determined to employ skills like problem solving, being a self starter, and being
-							a team player. My current expertise focuses around React, Node, SQL and Python, rounding me out to be a perfect
-							inclusion to any company.
+							I am a Front End Web Developer with a degree in Applied Mathematics and a Certificate in Full Stack Web Development
+							from the University of California, Riverside. With extensive experience in advanced mathematics, statistics, and
+							involvement in various open-source projects, I am determined to employ skills like problem solving, being a self
+							starter, and being a team player. My current expertise focuses around React, Node, SQL and Python, rounding me out
+							to be a perfect inclusion to any company.
 						</Typography>
 					</Box>
 				</Box>
