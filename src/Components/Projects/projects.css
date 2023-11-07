@@ -23,8 +23,8 @@
 	-webkit-transform-origin: 50% 50%;
 	-ms-transform-origin: 50% 50%;
 	transform-origin: 50% 50%;
-	-webkit-transform: rotate3d(-0.2, 0.9, 0, -50deg);
-	transform: rotate3d(-0.2, 0.9, 0, -50deg);
+	-webkit-transform: rotate3d(-1.2, 1, -0.15, -45deg);
+	transform: rotate3d(-1.2, 1, -0.15, -45deg);
 	-webkit-box-shadow: 0 25px 25px -25px #222;
 	box-shadow: 0 25px 25px -25px #222;
 }

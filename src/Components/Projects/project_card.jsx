@@ -11,7 +11,7 @@ export function ProjectCard({ project }) {
 				sx={{
 					width: { sm: '75vw', xs: '90vw' },
 					maxWidth: { md: '1100px' },
-					minWidth: { md: '910px' },
+					minWidth: { md: '1000px', sm: '550px' },
 					height: '70vh',
 					minHeight: '660px',
 					display: 'flex',
@@ -20,7 +20,7 @@ export function ProjectCard({ project }) {
 					flexDirection: 'column',
 					color: 'var(--darkblue)',
 					backgroundColor: 'white',
-					boxShadow: '0 30px 25px -25px #222',
+					boxShadow: '0 20px 30px -18px #222',
 				}}
 			>
 				<Box className="project-title">

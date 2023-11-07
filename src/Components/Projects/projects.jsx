@@ -44,7 +44,7 @@ const weathered = {
 	name: 'Weathered',
 	skillsUsed: [<ReactLogo />, <NodeJSLogo />, <JavascriptLogo />, <CSS3Logo />],
 	description:
-		'React Weatherboard the provides all of the essentials of daily and forecasted weather. From rain to wind to hail, it has it all!',
+		'React Weatherboard which provides all of the essentials of daily and forecasted weather. From wind to hail, it has it all!',
 	github: 'https://github.com/seddboi/Weatheredv2',
 	video: { path: '/videos/weathered.mov', alt: 'Weathered Dashboard App' },
 };
@@ -74,7 +74,13 @@ export function Projects() {
 			<Container className="projects-section" id="projects" disableGutters maxWidth="false" sx={{}}>
 				<Typography
 					className="section-title"
-					sx={{ userSelect: 'none', fontSize: { xs: '25px', sm: '25px', md: '30px' }, pl: '20px', zIndex: 0 }}
+					sx={{
+						userSelect: 'none',
+						fontSize: { xs: '25px', sm: '25px', md: '30px' },
+						pl: '20px',
+						zIndex: 0,
+						color: 'var(--mediumblue)',
+					}}
 				>
 					Projects
 				</Typography>
