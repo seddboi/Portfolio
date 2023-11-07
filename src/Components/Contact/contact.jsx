@@ -19,11 +19,18 @@ export function Contact() {
 					position: 'relative',
 					backgroundColor: 'var(--white)',
 					height: '100vh',
+					minHeight: '100vh',
 				}}
 			>
 				<Typography
 					className="section-title"
-					sx={{ userSelect: 'none', fontSize: { xs: '25px', sm: '25px', md: '30px' }, pl: '20px', zIndex: 0 }}
+					sx={{
+						userSelect: 'none',
+						fontSize: { xs: '25px', sm: '25px', md: '30px' },
+						pl: '20px',
+						zIndex: 0,
+						color: 'var(--mediumblue)',
+					}}
 				>
 					Contact Me
 				</Typography>
@@ -55,34 +62,56 @@ export function Contact() {
 								height: '55vh',
 							}}
 						>
-							<TextField
-								variant="outlined"
-								label="Name"
-								size="small"
-								name="name"
-								fullWidth
-								sx={{ mb: 5, input: { color: 'var(--darkblue)' } }}
+							<InputBase
+								placeholder="Name"
+								autoComplete="name"
+								sx={{
+									width: '100%',
+									border: 1,
+									borderColor: 'var(--mediumblue)',
+									borderRadius: 1,
+									mb: 5,
+									px: 2,
+									py: '5px',
+									input: { color: 'var(--mediumblue)' },
+								}}
 							/>
-							<TextField
-								variant="outlined"
-								label="Email"
-								size="small"
-								name="email"
-								fullWidth
-								sx={{ mb: 5, input: { color: 'var(--darkblue)' } }}
+							<InputBase
+								placeholder="Email"
+								autoComplete="email"
+								sx={{
+									width: '100%',
+									border: 1,
+									borderColor: 'var(--mediumblue)',
+									borderRadius: 1,
+									mb: 5,
+									px: 2,
+									py: '5px',
+									input: { color: 'var(--mediumblue)' },
+								}}
 							/>
-							<TextField
-								variant="outlined"
-								label="Message"
-								size="small"
-								name="message"
+							<InputBase
+								placeholder="Message"
 								multiline
 								rows={3}
-								fullWidth
-								inputProps={{ style: { color: 'var(--darkblue)' } }}
-								sx={{ mb: 5 }}
+								inputProps={{ style: { color: 'var(--mediumblue)' } }}
+								sx={{
+									width: '100%',
+									border: 1,
+									borderColor: 'var(--mediumblue)',
+									borderRadius: 1,
+									mb: 5,
+									px: 2,
+									py: '5px',
+								}}
 							/>
-							<Button type="submit" variant="text" color="secondary" size="small" sx={{}}>
+							<Button
+								type="submit"
+								variant="text"
+								color="secondary"
+								size="small"
+								sx={{ width: '100%', color: 'var(--mediumblue)' }}
+							>
 								Submit
 							</Button>
 						</Box>
