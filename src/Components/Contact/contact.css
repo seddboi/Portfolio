@@ -7,18 +7,19 @@
 	top: 20px;
 }
 
-.link-logo {
-	display: -webkit-box;
-	display: -ms-flexbox;
+.icon-logo {
 	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	-ms-flex-line-pack: center;
-	align-content: center;
+	flex-direction: column;
+	color: var(--lightgrey);
+	transition-duration: 0.35s;
+	font-size: 60px;
+	padding: 8px;
 }
 
-.link-logo svg {
-	width: 50px;
-	height: auto;
+.icon-logo:hover {
+	color: var(--mediumblue);
+}
+
+.social-links {
+	font-size: 15px;
 }

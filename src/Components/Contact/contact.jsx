@@ -1,13 +1,11 @@
-import React, { useEffect } from 'react';
-import { Container, Box, ThemeProvider, Typography, Button, TextField, InputBase } from '@mui/material';
-import { useInView } from 'react-intersection-observer';
-import { GithubLogo, LinkedInLogo, ResumeLogo } from '../SVGComponents/svgcomponents';
+import React from 'react';
+import { Container, Box, ThemeProvider, Typography, Button, InputBase, ButtonBase } from '@mui/material';
+import { BsGithub, BsLinkedin } from 'react-icons/bs';
+import { BiSolidFolderOpen } from 'react-icons/bi';
 import { theme } from '../../App';
 import './contact.css';
 
 export function Contact() {
-	// const { ref: contactme, inView: isContactTitleVisible } = useInView();
-
 	return (
 		<ThemeProvider theme={theme}>
 			<Container
@@ -68,7 +66,7 @@ export function Contact() {
 								sx={{
 									width: '100%',
 									border: 1,
-									borderColor: 'var(--mediumblue)',
+									borderColor: 'var(--lightgrey)',
 									borderRadius: 1,
 									mb: 5,
 									px: 2,
@@ -82,7 +80,7 @@ export function Contact() {
 								sx={{
 									width: '100%',
 									border: 1,
-									borderColor: 'var(--mediumblue)',
+									borderColor: 'var(--lightgrey)',
 									borderRadius: 1,
 									mb: 5,
 									px: 2,
@@ -98,7 +96,7 @@ export function Contact() {
 								sx={{
 									width: '100%',
 									border: 1,
-									borderColor: 'var(--mediumblue)',
+									borderColor: 'var(--lightgrey)',
 									borderRadius: 1,
 									mb: 5,
 									px: 2,
@@ -129,68 +127,30 @@ export function Contact() {
 							mb: 2,
 						}}
 					>
-						<Button
-							className="icon-logo"
-							href="https://github.com/seddboi"
-							target="_blank"
-							sx={{
-								display: 'flex',
-								flexDirection: 'column',
-								alignSelf: 'center',
-								justifyContent: 'center',
-								width: { xs: '13vw', sm: '10vw', md: '5vw' },
-								position: 'relative',
-								background: 'transparent',
-								p: 0,
-								border: 'none',
-							}}
-						>
-							<Box className="link-logo">
-								<GithubLogo />
-							</Box>
-						</Button>
+						<ButtonBase className="icon-logo" href="https://github.com/seddboi" target="_blank">
+							<BsGithub />
+							<Typography className="social-links" variant="p">
+								Github
+							</Typography>
+						</ButtonBase>
 
-						<Button
-							className="icon-logo"
-							href="https://www.linkedin.com/in/gian-zamora/"
-							target="_blank"
-							sx={{
-								display: 'flex',
-								flexDirection: 'column',
-								alignSelf: 'center',
-								justifyContent: 'center',
-								width: { xs: '13vw', sm: '10vw', md: '5vw' },
-								position: 'relative',
-								background: 'transparent',
-								p: 0,
-								border: 'none',
-							}}
-						>
-							<Box className="link-logo">
-								<LinkedInLogo />
-							</Box>
-						</Button>
+						<ButtonBase className="icon-logo" href="https://www.linkedin.com/in/gian-zamora/" target="_blank">
+							<BsLinkedin />
+							<Typography className="social-links" variant="p">
+								LinkedIn
+							</Typography>
+						</ButtonBase>
 
-						<Button
+						<ButtonBase
 							className="icon-logo"
 							href="https://docs.google.com/document/d/1hdytmMskYmSvmlLCi7IIPyM2keAfKw_lDbU9Xa83mWs/edit?usp=sharing"
 							target="_blank"
-							sx={{
-								display: 'flex',
-								flexDirection: 'column',
-								alignSelf: 'center',
-								justifyContent: 'center',
-								width: { xs: '13vw', sm: '10vw', md: '5vw' },
-								position: 'relative',
-								background: 'transparent',
-								p: 0,
-								border: 'none',
-							}}
 						>
-							<Box className="link-logo">
-								<ResumeLogo />
-							</Box>
-						</Button>
+							<BiSolidFolderOpen />
+							<Typography className="social-links" variant="p">
+								Resume
+							</Typography>
+						</ButtonBase>
 					</Box>
 				</Box>
 			</Container>
