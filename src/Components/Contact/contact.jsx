@@ -108,7 +108,7 @@ export function Contact() {
 								variant="text"
 								color="secondary"
 								size="small"
-								sx={{ width: '100%', color: 'var(--mediumblue)' }}
+								sx={{ width: '100%', color: 'var(--lightgrey)', ':hover': { color: 'var(--mediumblue)' } }}
 							>
 								Submit
 							</Button>

@@ -10,14 +10,14 @@
 .icon-logo {
 	display: flex;
 	flex-direction: column;
-	color: var(--lightgrey);
+	color: var(--lightgrey) !important;
 	transition-duration: 0.35s;
 	font-size: 60px;
 	padding: 8px;
 }
 
 .icon-logo:hover {
-	color: var(--mediumblue);
+	color: var(--mediumblue) !important;
 }
 
 .social-links {
