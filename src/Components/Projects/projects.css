@@ -28,6 +28,35 @@
 	-webkit-box-shadow: 0 25px 25px -25px #222;
 	box-shadow: 0 25px 25px -25px #222;
 }
+.logo {
+	position: relative;
+}
+
+.logo::before,
+.logo::after {
+	--scale: 0;
+	position: absolute;
+	top: -0.5rem;
+	left: 50%;
+	transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+	transition: 0.35s transform;
+	transform-origin: bottom center;
+}
+
+.logo::before {
+	content: attr(data-tooltip);
+	height: 20px;
+	width: max-content;
+	background: var(--lightgrey);
+	padding: 0 5px;
+	text-align: center;
+	text-wrap: nowrap;
+	border-radius: 5px;
+}
+
+.logo:hover::before {
+	--scale: 1;
+}
 
 @-webkit-keyframes in {
 	0% {

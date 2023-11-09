@@ -105,7 +105,9 @@ export function ProjectCard({ project }) {
 								{project.skillsUsed.map((icon, i) => (
 									<Grid item key={i} className="logo-outer-box" justifyContent="center" xs={4} sm={4} md={4}>
 										<Box className="logo-inner-box" sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-											<Box className="logo">{icon}</Box>
+											<Box className="logo" data-tooltip={icon.title}>
+												{icon.logo}
+											</Box>
 										</Box>
 									</Grid>
 								))}

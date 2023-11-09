@@ -7,7 +7,6 @@ import './projects.css';
 import './horizontal-scroll.js';
 import {
 	CSS3Logo,
-	MySQLLogo,
 	NodeJSLogo,
 	ReactLogo,
 	ReactRouterLogo,
@@ -15,13 +14,17 @@ import {
 	ExpressLogoBlack,
 	PostgreSQLLogo,
 	PythonLogo,
-	ExpressLogo,
 	TailwindLogo,
 } from '../SVGComponents/svgcomponents';
 
 const pwdntr = {
 	name: 'Passwordinator',
-	skillsUsed: [<ReactLogo />, <NodeJSLogo />, <PostgreSQLLogo />, <ExpressLogoBlack />, <ReactRouterLogo />],
+	skillsUsed: [
+		{ logo: <ReactLogo />, title: 'React.js' },
+		{ logo: <NodeJSLogo />, title: 'Node.js' },
+		{ logo: <PostgreSQLLogo />, title: 'PostgreSQL' },
+		{ logo: <ReactRouterLogo />, title: 'React Router' },
+	],
 	description:
 		'A Google Chrome Password Duplicate application meant to securely create and hold any sensitive password information. Simply create a user account, and start saving away!',
 	github: 'https://github.com/seddboi/pwdntr-client',
@@ -33,7 +36,7 @@ const pwdntr = {
 
 const blackjack = {
 	name: 'BlackJack',
-	skillsUsed: [<PythonLogo />],
+	skillsUsed: [{ logo: <PythonLogo />, title: 'Python' }],
 	description:
 		'A simple command-line/terminal Casino BlackJack game. Excellent way to play the game without all of the detrimental debt! ',
 	github: 'https://github.com/seddboi/BlackJack-Python-Game',
@@ -42,7 +45,11 @@ const blackjack = {
 
 const weathered = {
 	name: 'Weathered',
-	skillsUsed: [<ReactLogo />, <NodeJSLogo />, <JavascriptLogo />, <CSS3Logo />],
+	skillsUsed: [
+		{ logo: <ReactLogo />, title: 'React.js' },
+		{ logo: <NodeJSLogo />, title: 'Node.js' },
+		{ logo: <CSS3Logo />, title: 'CSS3' },
+	],
 	description:
 		'React Weatherboard which provides all of the essentials of daily and forecasted weather. From wind to hail, it has it all!',
 	github: 'https://github.com/seddboi/Weatheredv2',
@@ -51,7 +58,12 @@ const weathered = {
 
 const mbd = {
 	name: "Monchi's World",
-	skillsUsed: [<ReactLogo />, <NodeJSLogo />, <ExpressLogoBlack />, <TailwindLogo />],
+	skillsUsed: [
+		{ logo: <ReactLogo />, title: 'React.js' },
+		{ logo: <NodeJSLogo />, title: 'Node.js' },
+		{ logo: <ExpressLogoBlack />, title: 'Express.js' },
+		{ logo: <TailwindLogo />, title: 'Tailwind CSS' },
+	],
 	description:
 		"Full-Stack application showcasing my girlfriend's accomplishments and attributes. Created as a birthday present for a wonderful woman.",
 	github: 'https://github.com/seddboi/Monchis-Home',
