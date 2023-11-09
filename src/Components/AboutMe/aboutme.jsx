@@ -54,7 +54,7 @@ export function AboutMe() {
 										alignItems: 'center',
 									}}
 								>
-									<Box className="logo">
+									<Box className="logo" data-tooltip="React.js">
 										<ReactLogo />
 									</Box>
 								</Box>
@@ -62,7 +62,7 @@ export function AboutMe() {
 
 							<Grid item>
 								<Box sx={{ height: '50px', width: '50px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-									<Box className="logo">
+									<Box className="logo" data-tooltip="Node.js">
 										<NodeJSLogo />
 									</Box>
 								</Box>
@@ -70,7 +70,7 @@ export function AboutMe() {
 
 							<Grid item>
 								<Box sx={{ height: '50px', width: '50px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-									<Box className="logo">
+									<Box className="logo" data-tooltip="PostgreSQL">
 										<PostgreSQLLogo />
 									</Box>
 								</Box>
@@ -78,7 +78,7 @@ export function AboutMe() {
 
 							<Grid item>
 								<Box sx={{ height: '50px', width: '50px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-									<Box className="logo">
+									<Box className="logo" data-tooltip="Javascript">
 										<JavascriptLogo />
 									</Box>
 								</Box>
@@ -86,7 +86,7 @@ export function AboutMe() {
 
 							<Grid item>
 								<Box sx={{ height: '50px', width: '50px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-									<Box className="logo">
+									<Box className="logo" data-tooltip="Python">
 										<PythonLogo />
 									</Box>
 								</Box>
