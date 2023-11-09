@@ -7,13 +7,25 @@
 	top: 20px;
 }
 
+.form-text-field {
+	width: 100%;
+	border: 1px solid var(--lightgrey);
+	border-radius: 5px;
+	margin-bottom: 8px;
+	padding: 5px 16px;
+	margin-bottom: 40px;
+}
+
+.Mui-focused {
+	border: 1px solid var(--mediumblue);
+}
+
 .icon-logo {
 	display: flex;
 	flex-direction: column;
 	color: var(--lightgrey) !important;
 	transition-duration: 0.35s;
 	font-size: 60px;
-	padding: 8px;
 }
 
 .icon-logo:hover {

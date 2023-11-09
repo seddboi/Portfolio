@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container, Box, ThemeProvider, Typography, Button, InputBase, ButtonBase } from '@mui/material';
 import { BsGithub, BsLinkedin } from 'react-icons/bs';
 import { BiSolidFolderOpen } from 'react-icons/bi';
@@ -6,6 +6,10 @@ import { theme } from '../../App';
 import './contact.css';
 
 export function Contact() {
+	const [name, setName] = useState('');
+	const [email, setEmail] = useState('');
+	const [message, setMessage] = useState('');
+
 	return (
 		<ThemeProvider theme={theme}>
 			<Container
@@ -61,53 +65,46 @@ export function Contact() {
 							}}
 						>
 							<InputBase
+								className="form-text-field"
 								placeholder="Name"
 								autoComplete="name"
+								value={name}
+								onChange={(e) => {
+									setName(e.target.value);
+								}}
 								sx={{
-									width: '100%',
-									border: 1,
-									borderColor: 'var(--lightgrey)',
-									borderRadius: 1,
-									mb: 5,
-									px: 2,
-									py: '5px',
 									input: { color: 'var(--mediumblue)' },
 								}}
 							/>
 							<InputBase
+								className="form-text-field"
 								placeholder="Email"
 								autoComplete="email"
+								value={email}
+								onChange={(e) => {
+									setEmail(e.target.value);
+								}}
 								sx={{
-									width: '100%',
-									border: 1,
-									borderColor: 'var(--lightgrey)',
-									borderRadius: 1,
-									mb: 5,
-									px: 2,
-									py: '5px',
 									input: { color: 'var(--mediumblue)' },
 								}}
 							/>
 							<InputBase
+								className="form-text-field"
 								placeholder="Message"
 								multiline
 								rows={3}
-								inputProps={{ style: { color: 'var(--mediumblue)' } }}
-								sx={{
-									width: '100%',
-									border: 1,
-									borderColor: 'var(--lightgrey)',
-									borderRadius: 1,
-									mb: 5,
-									px: 2,
-									py: '5px',
+								value={message}
+								onChange={(e) => {
+									setMessage(e.target.value);
 								}}
+								inputProps={{ style: { color: 'var(--mediumblue)', padding: '5px 16px' } }}
 							/>
 							<Button
 								type="submit"
 								variant="text"
 								color="secondary"
 								size="small"
+								disabled={name !== '' && email !== '' && message !== '' ? false : true}
 								sx={{ width: '100%', color: 'var(--lightgrey)', ':hover': { color: 'var(--mediumblue)' } }}
 							>
 								Submit
