@@ -103,11 +103,12 @@ export function AboutMe() {
 							paragraph={true}
 							sx={{ textIndent: { md: '50px', xs: '25px' }, fontSize: { md: '27px', sm: '22px', xs: '18px' } }}
 						>
-							I am a Front End Web Developer with a degree in Applied Mathematics and a Certificate in Full Stack Web Development
-							from the University of California, Riverside. With extensive experience in advanced mathematics, statistics, and
-							involvement in various open-source projects, I am determined to employ skills like problem solving, being a self
-							starter, and being a team player. My current expertise focuses around React, Node, SQL and Python, rounding me out
-							to be a perfect inclusion to any company.
+							I am Gian (gee•AHH•n) Zamora, a skilled Full Stack Web Developer holding a Bachelor's degree in Applied Mathematics
+							and a Certificate in Full Stack Web Development from the University of California, Riverside. Leveraging my
+							proficiency in advanced mathematics, statistics, and active participation in open-source projects, I am adept at
+							problem-solving, self-initiation, and collaborative teamwork. My current expertise encompasses React, Node, SQL,
+							Javascript, and Python, making me a valuable asset for any organization seeking a versatile and accomplished
+							professional to drive impactful solutions.
 						</Typography>
 					</Box>
 				</Box>

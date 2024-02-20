@@ -137,7 +137,7 @@ export function HomePage() {
 							variant="h5"
 							sx={{ userSelect: 'none', fontSize: { md: '50px', sm: '40px', xs: '25px' }, textAlign: 'center' }}
 						>
-							Front End Web Developer
+							Full Stack Web Developer
 						</Typography>
 						<Box sx={{ position: 'absolute', bottom: '1px' }}>
 							<IntroPointer />
