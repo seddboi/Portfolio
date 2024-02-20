@@ -140,7 +140,7 @@ export function Contact() {
 
 						<ButtonBase
 							className="icon-logo"
-							href="https://docs.google.com/document/d/1hdytmMskYmSvmlLCi7IIPyM2keAfKw_lDbU9Xa83mWs/edit?usp=sharing"
+							href="https://docs.google.com/document/d/1LkyLpSDd_s-eI2z-rLsB3EuKWc7DE9Oc/edit?usp=sharing&ouid=112215666415015145695&rtpof=true&sd=true"
 							target="_blank"
 						>
 							<BiSolidFolderOpen />
